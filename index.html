@@ -53,7 +53,7 @@ em{font-style:normal;color:#ffe27a;font-weight:700}
 .badge.g{border-color:#8fb0ff;color:#8fb0ff}
 .tb-t{font-size:11px;color:#b9c6ea;flex:1;min-width:0;overflow:hidden;
   text-overflow:ellipsis;white-space:nowrap}
-.tb-b{display:flex;gap:4px}
+.tb-b{display:flex;gap:4px;margin-left:auto}
 .iconb{font-size:10.5px;padding:3px 7px;border:1px solid #4a5c9a;border-radius:3px;
   color:#cfd9ff;background:rgba(12,20,58,.7);white-space:nowrap}
 .iconb:active{background:#1a2660}
@@ -609,9 +609,9 @@ em{font-style:normal;color:#ffe27a;font-weight:700}
 <!-- ============================ タイトル ============================ -->
 <section id="scTitle">
   <div class="topbar">
-    <span class="badge" data-i18n="STAFF ONLY">関係者限定</span>
-    <span class="badge g" data-i18n="Ver. 2026.08">2026.08版</span>
-    <span class="tb-t" data-i18n="Reviewed by the 2026 JSD Committee">監修：2026年度運営委員会</span>
+    <span class="badge" data-i18n="JSD FAMILIES ONLY">関係者限定</span>
+    <span class="badge g" data-i18n="Ver. 2026.08.13">2026.08.13版</span>
+    <span class="tb-t" data-i18n="2026 JSD Committee">監修：2026年度運営委員会</span>
   </div>
   <div class="tl-wrap">
     <svg class="tl-stars" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
@@ -621,7 +621,7 @@ em{font-style:normal;color:#ffe27a;font-weight:700}
       <div class="tl-1" data-i18n="JAPANESE SCHOOL OF DALLAS">ダラス補習校（JSD）</div>
       <div class="tl-2" data-i18n="PICKUP QUEST">送迎クエスト</div>
       <div class="tl-3" data-i18n="The Book of Drop-off &amp; Pickup Routes">登下校ルート 攻略の書</div>
-      <div class="tl-cr" data-i18n="From the 18-page JSD Drop-off &amp; Pickup Rules (Aug 2026) &mdash; only <b>the part that applies to your family</b>.">JSD登下校運用（2026.08）より　全18ページの、<b>わが家の分だけ</b>を。</div>
+      <div class="tl-cr" data-i18n="From the 18-page JSD Drop-off &amp; Pickup Rules (Aug 13, 2026) &mdash; only <b>the part that applies to your family</b>.">JSD登下校運用（2026.08.13）より　全18ページの、<b>わが家の分だけ</b>を。</div>
     </div>
     <!-- 言語切り替え。ゲーム全体がアメリカ英語で遊べる／日本語に戻せる。 -->
     <div class="langsw" id="langSw">
@@ -702,8 +702,8 @@ em{font-style:normal;color:#ffe27a;font-weight:700}
     </div>
     <!-- ★フォントを小さくしないこと（依頼者の指摘）。ここが必須表記の本体。
          画面下にもう一度同じ文を出していたのは依頼者の指摘で削除した。 -->
-    <div class="tl-note" data-i18n="The official rules in the &ldquo;JSD Drop-off &amp; Pickup Rules (Aug 2026)&rdquo; always take precedence.<br>Figures are quoted from the school handout. Please do not share or redistribute outside the JSD community.">
-      正式なルールは『JSD登下校運用（2026.08）』が優先します。<br>
+    <div class="tl-note" data-i18n="The official rules in the &ldquo;JSD Drop-off &amp; Pickup Rules (Aug 13, 2026)&rdquo; always take precedence.<br>Figures are quoted from the school handout. Please do not share or redistribute outside the JSD community.">
+      正式なルールは『JSD登下校運用（2026.08.13）』が優先します。<br>
       図は配布資料からの引用です。学校関係者以外への転載・再配布はご遠慮ください。
     </div>
   </div>
@@ -712,9 +712,9 @@ em{font-style:normal;color:#ffe27a;font-weight:700}
 <!-- ============================ パーティ編成 ============================ -->
 <section id="scParty" class="hide">
   <div class="topbar">
-    <span class="badge" data-i18n="STAFF ONLY">関係者限定</span>
-    <span class="badge g" data-i18n="Ver. 2026.08">2026.08版</span>
-    <span class="tb-t" data-i18n="Reviewed by the 2026 JSD Committee">監修：2026年度運営委員会</span>
+    <span class="badge" data-i18n="JSD FAMILIES ONLY">関係者限定</span>
+    <span class="badge g" data-i18n="Ver. 2026.08.13">2026.08.13版</span>
+    <span class="tb-t" data-i18n="2026 JSD Committee">監修：2026年度運営委員会</span>
   </div>
   <div class="pg">
     <div class="h2" data-i18n="Your Family<span>Choose where your children belong</span>">わが家の 編成<span>お子さんの所属をえらぶ</span></div>
@@ -734,8 +734,8 @@ em{font-style:normal;color:#ffe27a;font-weight:700}
     <button class="bigb sm" id="bPartyBack" data-i18n="Back">もどる</button>
     <button class="bigb pri" id="bParty" data-i18n="Start with this family &#9654;">この編成で すすむ ▶</button>
   </div>
-  <div class="foot" data-i18n="<b>STAFF ONLY &middot; Ver. 2026.08</b> / Reviewed by the 2026 JSD Operating Committee / The official &ldquo;JSD Drop-off &amp; Pickup Rules (Aug 2026)&rdquo; takes precedence<br>Figures are quoted from the school handout / Please do not share or redistribute outside the JSD community">
-    <b>関係者限定・2026.08版</b>／監修：2026年度運営委員会／正式なルールは『JSD登下校運用（2026.08）』が優先します<br>
+  <div class="foot" data-i18n="<b>JSD FAMILIES ONLY &middot; Ver. 2026.08.13</b> / Reviewed by the 2026 JSD Operating Committee / The official &ldquo;JSD Drop-off &amp; Pickup Rules (Aug 13, 2026)&rdquo; takes precedence<br>Figures are quoted from the school handout / Please do not share or redistribute outside the JSD community">
+    <b>関係者限定・2026.08.13版</b>／監修：2026年度運営委員会／正式なルールは『JSD登下校運用（2026.08.13）』が優先します<br>
     図は配布資料からの引用です／学校関係者以外への転載・再配布はご遠慮ください
   </div>
 </section>
@@ -743,9 +743,8 @@ em{font-style:normal;color:#ffe27a;font-weight:700}
 <!-- ============================ 章えらび ============================ -->
 <section id="scMap" class="hide">
   <div class="topbar">
-    <span class="badge" data-i18n="STAFF ONLY">関係者限定</span>
-    <span class="badge g" data-i18n="Ver. 2026.08">2026.08版</span>
-    <span class="tb-t" data-i18n="Reviewed by the 2026 JSD Committee">監修：2026年度運営委員会</span>
+    <span class="badge" data-i18n="JSD FAMILIES ONLY">関係者限定</span>
+    <span class="badge g" data-i18n="Ver. 2026.08.13">2026.08.13版</span>
     <span class="tb-b">
       <button class="iconb" id="bToCodex" data-i18n="Rulebook">ずかん</button>
       <button class="iconb" id="bToCard" data-i18n="Pickup Card">送迎カード</button>
@@ -765,8 +764,8 @@ em{font-style:normal;color:#ffe27a;font-weight:700}
     <button class="bigb sm" id="bReParty" data-i18n="Change family">編成しなおす</button>
     <button class="bigb sm" id="bMapTitle" data-i18n="Title">タイトル</button>
   </div>
-  <div class="foot" data-i18n="<b>STAFF ONLY &middot; Ver. 2026.08</b> / Reviewed by the 2026 JSD Operating Committee / The official &ldquo;JSD Drop-off &amp; Pickup Rules (Aug 2026)&rdquo; takes precedence<br>Figures are quoted from the school handout / Please do not share or redistribute outside the JSD community">
-    <b>関係者限定・2026.08版</b>／監修：2026年度運営委員会／正式なルールは『JSD登下校運用（2026.08）』が優先します<br>
+  <div class="foot" data-i18n="<b>JSD FAMILIES ONLY &middot; Ver. 2026.08.13</b> / Reviewed by the 2026 JSD Operating Committee / The official &ldquo;JSD Drop-off &amp; Pickup Rules (Aug 13, 2026)&rdquo; takes precedence<br>Figures are quoted from the school handout / Please do not share or redistribute outside the JSD community">
+    <b>関係者限定・2026.08.13版</b>／監修：2026年度運営委員会／正式なルールは『JSD登下校運用（2026.08.13）』が優先します<br>
     図は配布資料からの引用です／学校関係者以外への転載・再配布はご遠慮ください
   </div>
 </section>
@@ -815,8 +814,8 @@ em{font-style:normal;color:#ffe27a;font-weight:700}
       <button class="bigb pri" id="bNext" data-i18n="Next &#9654;">つぎへ ▶</button>
     </div>
   </div>
-  <div class="foot" data-i18n="<b>STAFF ONLY &middot; Ver. 2026.08</b> / Reviewed by the 2026 JSD Operating Committee / The official handout (Aug 2026) takes precedence / Figures quoted from the handout<br>Please do not share or redistribute outside the JSD community">
-    <b>関係者限定・2026.08版</b>／監修：2026年度運営委員会／『JSD登下校運用（2026.08）』が優先／図は配布資料からの引用<br>
+  <div class="foot" data-i18n="<b>JSD FAMILIES ONLY &middot; Ver. 2026.08.13</b> / Reviewed by the 2026 JSD Operating Committee / The official handout (Aug 13, 2026) takes precedence / Figures quoted from the handout<br>Please do not share or redistribute outside the JSD community">
+    <b>関係者限定・2026.08.13版</b>／監修：2026年度運営委員会／『JSD登下校運用（2026.08.13）』が優先／図は配布資料からの引用<br>
     学校関係者以外への転載・再配布はご遠慮ください
   </div>
 </section>
@@ -824,17 +823,17 @@ em{font-style:normal;color:#ffe27a;font-weight:700}
 <!-- ============================ ルールずかん ============================ -->
 <section id="scCodex" class="hide">
   <div class="topbar">
-    <span class="badge" data-i18n="STAFF ONLY">関係者限定</span>
-    <span class="badge g" data-i18n="Ver. 2026.08">2026.08版</span>
-    <span class="tb-t" data-i18n="Rulebook / 2026 JSD Committee">ルールずかん／監修：2026年度運営委員会</span>
+    <span class="badge" data-i18n="JSD FAMILIES ONLY">関係者限定</span>
+    <span class="badge g" data-i18n="Ver. 2026.08.13">2026.08.13版</span>
+    <span class="tb-t" data-i18n="Rulebook">ルールずかん</span>
     <span class="tb-b"><button class="iconb" id="bCodexBack" data-i18n="Back">もどる</button></span>
   </div>
   <!-- 「わが家に関係する資料だけ」に絞る帯。編成が済んでいるときだけ buildCodex() が中身を書く。 -->
   <div class="cx-fil" id="cxFil"></div>
   <div class="cx-tabs" id="codexTabs"></div>
   <div class="cx-body" id="codexBody"></div>
-  <div class="foot" data-i18n="Source: JSD Drop-off &amp; Pickup Rules (Aug 2026) / <b>Figures are quoted from the school handout</b> / The handout takes precedence<br>Staff only. Please do not share or redistribute outside the JSD community. / For contact numbers, see P.15 of the handout.">
-    出典：JSD登下校運用（2026.08）／<b>図は配布資料からの引用です</b>／正式なルールは配布資料が優先します<br>
+  <div class="foot" data-i18n="Source: JSD Drop-off &amp; Pickup Rules (Aug 13, 2026) / Reviewed by the 2026 JSD Operating Committee / <b>Figures are quoted from the school handout</b> / The handout takes precedence<br>For JSD families only. Please do not share or redistribute outside the JSD community. / For contact numbers, see P.15 of the handout.">
+    出典：JSD登下校運用（2026.08.13）／監修：2026年度運営委員会／<b>図は配布資料からの引用です</b>／正式なルールは配布資料が優先します<br>
     関係者限定・学校関係者以外への転載・再配布はご遠慮ください／連絡先は配布資料P.15をご確認ください
   </div>
 </section>
@@ -842,17 +841,17 @@ em{font-style:normal;color:#ffe27a;font-weight:700}
 <!-- ============================ 送迎カード ============================ -->
 <section id="scCard" class="hide">
   <div class="topbar noprint">
-    <span class="badge" data-i18n="STAFF ONLY">関係者限定</span>
-    <span class="badge g" data-i18n="Ver. 2026.08">2026.08版</span>
-    <span class="tb-t" data-i18n="Our Family Pickup Card">わが家の送迎カード</span>
+    <span class="badge" data-i18n="JSD FAMILIES ONLY">関係者限定</span>
+    <span class="badge g" data-i18n="Ver. 2026.08.13">2026.08.13版</span>
+    <span class="tb-t" data-i18n="Pickup Card">わが家の送迎カード</span>
     <span class="tb-b">
       <button class="iconb" id="bPrint" data-i18n="Print / PDF">印刷／PDF</button>
       <button class="iconb" id="bCardBack" data-i18n="Back">もどる</button>
     </span>
   </div>
   <div class="sheetwrap"><div class="sheet" id="card"></div></div>
-  <div class="foot noprint" data-i18n="<b>STAFF ONLY &middot; Ver. 2026.08</b> / Reviewed by the 2026 JSD Operating Committee / The official &ldquo;JSD Drop-off &amp; Pickup Rules (Aug 2026)&rdquo; takes precedence<br>Please do not share or redistribute outside the JSD community">
-    <b>関係者限定・2026.08版</b>／監修：2026年度運営委員会／正式なルールは『JSD登下校運用（2026.08）』が優先します<br>
+  <div class="foot noprint" data-i18n="<b>JSD FAMILIES ONLY &middot; Ver. 2026.08.13</b> / Reviewed by the 2026 JSD Operating Committee / The official &ldquo;JSD Drop-off &amp; Pickup Rules (Aug 13, 2026)&rdquo; takes precedence<br>Please do not share or redistribute outside the JSD community">
+    <b>関係者限定・2026.08.13版</b>／監修：2026年度運営委員会／正式なルールは『JSD登下校運用（2026.08.13）』が優先します<br>
     学校関係者以外への転載・再配布はご遠慮ください
   </div>
 </section>
@@ -860,8 +859,8 @@ em{font-style:normal;color:#ffe27a;font-weight:700}
 <!-- ============================ 修了証 ============================ -->
 <section id="scCert" class="hide">
   <div class="topbar noprint">
-    <span class="badge" data-i18n="STAFF ONLY">関係者限定</span>
-    <span class="badge g" data-i18n="Ver. 2026.08">2026.08版</span>
+    <span class="badge" data-i18n="JSD FAMILIES ONLY">関係者限定</span>
+    <span class="badge g" data-i18n="Ver. 2026.08.13">2026.08.13版</span>
     <span class="tb-t" data-i18n="Certificate">修了証</span>
     <span class="tb-b">
       <button class="iconb" id="bPrint2" data-i18n="Print / PDF">印刷／PDF</button>
@@ -870,8 +869,8 @@ em{font-style:normal;color:#ffe27a;font-weight:700}
     </span>
   </div>
   <div class="sheetwrap"><div class="cert" id="cert"></div></div>
-  <div class="foot noprint" data-i18n="<b>STAFF ONLY &middot; Ver. 2026.08</b> / Reviewed by the 2026 JSD Operating Committee / The official &ldquo;JSD Drop-off &amp; Pickup Rules (Aug 2026)&rdquo; takes precedence<br>Please do not share or redistribute outside the JSD community">
-    <b>関係者限定・2026.08版</b>／監修：2026年度運営委員会／正式なルールは『JSD登下校運用（2026.08）』が優先します<br>
+  <div class="foot noprint" data-i18n="<b>JSD FAMILIES ONLY &middot; Ver. 2026.08.13</b> / Reviewed by the 2026 JSD Operating Committee / The official &ldquo;JSD Drop-off &amp; Pickup Rules (Aug 13, 2026)&rdquo; takes precedence<br>Please do not share or redistribute outside the JSD community">
+    <b>関係者限定・2026.08.13版</b>／監修：2026年度運営委員会／正式なルールは『JSD登下校運用（2026.08.13）』が優先します<br>
     学校関係者以外への転載・再配布はご遠慮ください
   </div>
 </section>
@@ -1694,40 +1693,46 @@ function mon(id) {
       '<path d="M0 0 L7 3" stroke="#ffd257" stroke-width="2.4" stroke-linecap="round"/></g>' +
       '</g>';
   } else if (id === "pw") {
-    /* まちあわせドラコン — 二つの首が別々の方を見ている「待ち合わせ」の化身。
-       ★依頼者の指名で、以前の双頭竜（fg）に寄せた姿にしてある。
+    /* まちあわせクラゲ — 下校の「行きちがい」の化身。ふわふわ待っている。
+       ★初版の「ピックアップ・レイス」を、依頼者の指示でクラゲに描き直したもの。
+         前の姿（双頭竜）は第5章の ふたごりゅう（fg）と同じ竜で見分けがつかなかった。
+         初版のレイスの持ち味（白い紙・ゆらぐ裾・ぽかんとした顔）はそのまま残す。
        手にしているのは白紙のピックアップカード（文字は入れない＝訳が要らない）。
-       笑いの置き場は「行きちがい」という現象そのもの。人は茶化さない。 */
+       ひとみを外へ寄せてあるのは「おたがい別の方を見ている」＝行きちがいの表現。
+       笑いの置き場は現象そのもの。人は茶化さない。 */
     s += '<g class="m-bob">' +
-      '<ellipse cx="100" cy="166" rx="58" ry="9" fill="#000" opacity=".38"/>' +
-      '<path d="M60 158 C46 138 46 112 60 100 C74 88 126 88 140 100 C154 112 154 138 140 158 Z" fill="url(#gC)"/>' +
-      '<path d="M70 104 C86 96 114 96 130 104 C118 100 82 100 70 104 Z" fill="#fff" opacity=".28"/>' +
-      /* 左の首（外を向く） */
-      '<path d="M76 106 C58 96 50 68 62 54 C74 42 94 46 98 60" fill="none" stroke="#5a3f96" stroke-width="14" stroke-linecap="round"/>' +
-      /* ひとみを外へ寄せる＝おたがい別の方を見ている */
-      '<g transform="translate(58,48)"><ellipse rx="20" ry="16" fill="url(#gC)"/>' +
-      '<ellipse cx="-8" cy="-3" rx="4.6" ry="5.6" fill="#fff"/><circle cx="-9.4" cy="-2" r="2.4" fill="#200a30"/>' +
-      '<ellipse cx="6" cy="-3" rx="4.6" ry="5.6" fill="#fff"/><circle cx="4.6" cy="-2" r="2.4" fill="#200a30"/>' +
-      '<path d="M-8 9 Q0 5 8 9" stroke="#2a1050" stroke-width="2.6" fill="none" stroke-linecap="round"/>' +
-      '<path d="M-20 -12 L-26 -22 L-12 -18 Z" fill="#8f6ad0"/></g>' +
-      /* 右の首（反対の外を向く） */
-      '<path d="M124 106 C142 96 150 68 138 54 C126 42 106 46 102 60" fill="none" stroke="#5a3f96" stroke-width="14" stroke-linecap="round"/>' +
-      '<g transform="translate(142,48)"><ellipse rx="20" ry="16" fill="url(#gC)"/>' +
-      '<ellipse cx="-6" cy="-3" rx="4.6" ry="5.6" fill="#fff"/><circle cx="-4.6" cy="-2" r="2.4" fill="#200a30"/>' +
-      '<ellipse cx="8" cy="-3" rx="4.6" ry="5.6" fill="#fff"/><circle cx="9.4" cy="-2" r="2.4" fill="#200a30"/>' +
-      '<path d="M-8 9 Q0 5 8 9" stroke="#2a1050" stroke-width="2.6" fill="none" stroke-linecap="round"/>' +
-      '<path d="M20 -12 L26 -22 L12 -18 Z" fill="#8f6ad0"/></g>' +
+      '<ellipse cx="100" cy="170" rx="50" ry="8" fill="#000" opacity=".34"/>' +
+      /* 足。かさより先に描いてうしろへまわす */
+      '<g class="m-fl" fill="none" stroke="#8f6ad0" stroke-width="7" stroke-linecap="round">' +
+      '<path d="M62 98 C54 120 66 136 56 160"/>' +
+      '<path d="M80 102 C72 126 86 142 76 166"/>' +
+      '<path d="M100 104 C94 128 106 146 100 170"/>' +
+      '<path d="M120 102 C128 126 114 142 124 166"/>' +
+      '<path d="M138 98 C146 120 134 136 144 160"/></g>' +
+      /* かさ。すそが波打っているのは初版のレイスの裾から */
+      '<path d="M100 26 C138 26 160 58 160 96 C152 112 142 100 130 110 C118 120 108 102 98 110' +
+      ' C88 118 78 100 66 110 C54 120 48 110 40 96 C40 58 62 26 100 26 Z" fill="url(#gC)"/>' +
+      '<path d="M100 32 C124 32 142 52 148 76 C132 62 116 56 100 56 C84 56 68 62 52 76' +
+      ' C58 52 76 32 100 32 Z" fill="#fff" opacity=".32"/>' +
+      /* かさのすじ */
+      '<g stroke="#c8b4f0" stroke-width="2" fill="none" opacity=".5">' +
+      '<path d="M72 40 C64 62 62 82 64 98"/><path d="M100 32 C100 60 100 82 100 100"/>' +
+      '<path d="M128 40 C136 62 138 82 136 98"/></g>' +
+      '<g class="m-eye">' +
+      '<ellipse cx="82" cy="76" rx="9" ry="11" fill="#fff"/><ellipse cx="118" cy="76" rx="9" ry="11" fill="#fff"/>' +
+      '<circle cx="79" cy="78" r="4.4" fill="#200a30"/><circle cx="121" cy="78" r="4.4" fill="#200a30"/>' +
+      '<circle cx="77.4" cy="74.4" r="1.5" fill="#fff"/><circle cx="119.4" cy="74.4" r="1.5" fill="#fff"/></g>' +
+      /* ぽかんとした口＝「あれ、行きちがい？」 */
+      '<ellipse cx="100" cy="97" rx="5.4" ry="4.4" fill="#2a1050" opacity=".85"/>' +
       /* 白紙のピックアップカード（フロントガラスに置くあれ） */
-      '<g transform="rotate(-4 100 128)">' +
-      '<rect x="74" y="110" width="52" height="34" rx="2" fill="url(#gPap)" stroke="#b9b09a" stroke-width="1.6"/>' +
+      '<g transform="rotate(-5 100 134)">' +
+      '<rect x="76" y="118" width="48" height="32" rx="2" fill="url(#gPap)" stroke="#b9b09a" stroke-width="1.6"/>' +
       '<g stroke="#c8c0aa" stroke-width="2.2" stroke-linecap="round">' +
-      '<path d="M81 120 L119 120"/><path d="M81 128 L112 128"/><path d="M81 136 L119 136"/></g></g>' +
-      /* カードを持つ前あし */
-      '<path d="M66 130 L76 126 M134 130 L124 126" stroke="#5a3f96" stroke-width="8" stroke-linecap="round"/>' +
-      /* 小さなつばさ */
-      '<g class="m-fl" fill="#8f6ad0" opacity=".8">' +
-      '<path d="M46 112 C30 100 30 84 44 88 L48 104 Z"/><path d="M154 112 C170 100 170 84 156 88 L152 104 Z"/></g>' +
-      '<path d="M60 158 L48 168 M100 160 L100 172 M140 158 L152 168" stroke="#5a3f96" stroke-width="8" stroke-linecap="round"/>' +
+      '<path d="M83 127 L117 127"/><path d="M83 134 L110 134"/><path d="M83 141 L117 141"/></g></g>' +
+      /* あわ＝待っている時間 */
+      '<g class="m-fl" fill="#e8d4ff" opacity=".5">' +
+      '<circle cx="28" cy="70" r="5"/><circle cx="20" cy="96" r="3.4"/>' +
+      '<circle cx="172" cy="64" r="4.4"/><circle cx="180" cy="90" r="3"/></g>' +
       '</g>';
   } else if (id === "fg") {
     /* げんそくとれいがいの ふたごりゅう — 二つの首（原則／例外） */
@@ -1819,6 +1824,35 @@ function mon(id) {
   return (s + "</svg>").replace(/(id="|url\(#)(g[A-Za-z]+)/g, "$1$2_" + MONSEQ);
 }
 var MONSEQ = 0;
+
+/* ------------------------------------------------------------
+   まだ姿を見せていない魔王（章えらび画面のボタン）。
+
+   ★依頼者の指定：「秘石を全て取得していないときは魔王のアイコンを
+     真っ黒＋はてなマーク（？）にして、全て取得したときに姿をあらわす」。
+
+   ・真っ黒なので、角と王冠の輪郭だけで「何かいる」と分かるようにする。
+   ・「？」は ASCII の ?。全角の？は英語モードの日本語検出に引っかかる。
+   ・id / url(#…) は使わない。章えらびには秘石が最大12個並ぶので、
+     ID方式だと参照が衝突して色が壊れる（mon() で踏んだ罠・§8.6-2）。
+   ------------------------------------------------------------ */
+function bossVeil() {
+  var body = "M100 22 L152 44 L164 96 C164 140 136 164 100 168 C64 164 36 140 36 96 L48 44 Z";
+  return '<svg viewBox="0 0 200 180" width="100%" aria-hidden="true">' +
+    '<ellipse cx="100" cy="170" rx="66" ry="10" fill="#000" opacity=".45"/>' +
+    '<g fill="#000">' +
+    /* 角 */
+    '<path d="M48 44 L20 8 L44 62 Z"/><path d="M152 44 L180 8 L156 62 Z"/>' +
+    /* 王冠 */
+    '<path d="M74 24 L74 8 L86 18 L100 4 L114 18 L126 8 L126 24 Z"/>' +
+    /* からだ */
+    '<path d="' + body + '"/></g>' +
+    /* 輪郭をほんのりだけ。暗い背景に溶けて「絵が出ていない」に見えるのを防ぐ */
+    '<path d="' + body + '" fill="none" stroke="#2a3560" stroke-width="1.6"/>' +
+    '<text x="100" y="126" font-size="78" font-weight="900" fill="#3a4577" ' +
+    'text-anchor="middle" font-family="serif">?</text>' +
+    "</svg>";
+}
 
 /* ------------------------------------------------------------
    秘石（6つ）
@@ -1978,10 +2012,10 @@ var Q = [
 /* ---------- 第1章 青の秘石／共通ルールの洞窟 ---------- */
 {ch:1,when:always,
  q:"校舎の中に入って子どもを迎えに行く。\nこのとき 身につけていなければ ならないものは？",
- c:["保護者ID（首から下げる）","学校からのメール","運転免許証","とくに何もいらない"],a:0,
+ c:["保護者ID（首から下げる）","学校からのメール（画面で提示する）","運転免許証（写真つきの身分証）","とくに何もいらない（顔で分かる）"],a:0,
  ex:"校舎に入る場合は<b>保護者IDの携帯が必須</b>です。<b>首から下げて警察官に提示</b>して入館してください。IDは初日（始業日）に長子のクラスで配付されます。",
  q_e:"You are going inside the building to pick up your child.\nWhat must you be wearing?",
- c_e:["Your parent ID, worn around your neck","The email from the school","Your driver's license","Nothing in particular"],
+ c_e:["Your parent ID, worn around your neck","The email from the school, shown on your phone","Your driver's license, or any other photo ID","Nothing in particular; the staff know your face"],
  ex_e:"To enter the building you <b>must carry your parent ID</b>. <b>Wear it around your neck and show it to the police officer</b> at the entrance. IDs are handed out on the first day of school in your oldest child's classroom.",
  p:"P.3, P.17"},
 
@@ -2002,6 +2036,26 @@ var Q = [
  c_e:["Always come to a complete stop","Rolling through slowly is fine","Just slowing down is enough","You may skip it in the morning"],
  ex_e:"<b>Always come to a complete stop</b> at a STOP sign. Obeying traffic law is listed as a rule that applies to everyone.",
  p:"P.3"},
+
+/* ★2026.08.13 の追記（配布資料 P.17 のFAQ）。
+   「南側にも信号と横断歩道があるから出られるはず」と読まれていた場所なので、
+   理由（横断歩道の安全確保・駐車場内の円滑な通行）まで解説に書く。
+   図は付けない——資料の全体図には南側が「出入口」と描かれていて、
+   いまの運用（入口専用）と食い違う（§11で委員会に上げる）。 */
+{ch:1,when:always,
+ q:"校舎<b>南側（信号のある出入口）</b>から\n<b>出庫</b>しようとした。これは？",
+ c:["だめ。南側は入口専用（警察官・警備員の誘導があるときは その指示に従う）",
+    "よい。信号があるので 出庫にも使える（右折で出るときに限る）",
+    "よい。登校の時間帯を すぎていれば 出庫にも使える",
+    "よい。前の車が 出て行くのに 続いて出れば 使える"],a:0,
+ ex:"校舎南側（信号のある出入口）は<b>入口専用として運用</b>されています。理由は2つ——<b>横断歩道の安全確保</b>と<b>駐車場内の円滑な車両通行</b>です。出庫は南側以外の出口をご利用ください。<br><b>ただし、警察官または警備員の誘導がある場合は、その指示に従ってください。</b><br><small>（2026年8月13日にFAQへ追記された項目です）</small>",
+ q_e:"You are about to <b>exit</b> through the <b>south side of the building</b>\n(the opening with the traffic light). Is that allowed?",
+ c_e:["No. The south side is entry only (if an officer or guard waves you through, follow them)",
+      "Yes. It has a traffic light, so you may exit there when turning right",
+      "Yes. You may exit there once the morning drop-off window is over",
+      "Yes. You may follow the car ahead of you out through it"],
+ ex_e:"The south side (the opening with the traffic light) is <b>operated as an entrance only</b>. Two reasons: <b>keeping the crosswalk safe</b>, and <b>keeping traffic moving inside the lots</b>. Please exit by one of the other openings.<br><b>If a police officer or a security guard directs you, follow their instructions.</b><br><small>(Added to the FAQ on August 13, 2026.)</small>",
+ p:"P.17"},
 
 {ch:1,when:always,
  q:"ドライブスルーで子どもを降ろす。\n<b>どちら側</b>のドアから降ろす？",
@@ -2032,10 +2086,10 @@ var Q = [
 
 {ch:1,when:always,
  q:"駐車場内を走るときの 速度は？",
- c:["徐行","制限速度いっぱいまで","流れに合わせる","空いていれば自由"],a:0,
+ c:["徐行（すぐ止まれる速さで）","制限速度いっぱいまで出してよい","前後の車の流れに合わせる","空いている時間帯なら自由"],a:0,
  ex:"<b>駐車場内は徐行</b>してください。登校時間帯は他学年も駐車場を利用し、児童・生徒が車の間を歩いています。",
  q_e:"How fast may you drive inside the parking lots?",
- c_e:["At a crawl","Up to the posted speed limit","Whatever the cars around you are doing","As fast as you like when it is empty"],
+ c_e:["At a crawl, slow enough to stop at once","Up to the posted speed limit is fine","Whatever the cars around you are doing","As fast as you like when it is empty"],
  ex_e:"<b>Drive at a crawl inside the lots.</b> Other grades are using the same lots at the same time, and children are walking between the cars.",
  p:"P.6〜8, P.11〜13"},
 
@@ -2060,19 +2114,19 @@ var Q = [
 
 {ch:2,when:always,img:"lots",
  q:"<b>第1駐車場（優先駐車場）</b>。\n優先される のはどんな方？",
- c:["お体が不自由な方・乳幼児をお連れの方","早く着いた方","幼稚部の保護者","運営委員"],a:0,
+ c:["お体が不自由な方・乳幼児をお連れの方","先に着いた方（着いた順に案内される）","幼稚部の保護者（送りが早い時間のため）","運営委員・学校当番の保護者"],a:0,
  ex:"第1駐車場は<b>お体が不自由な方、乳幼児をお連れの方</b>の優先駐車場です。教職員・スタッフは第2駐車場が満車の場合に限り利用できます。",
  q_e:"<b>Parking Lot 1 is the priority lot.</b>\nWho has priority there?",
- c_e:["People with limited mobility and people with infants or toddlers","Whoever arrives earliest","Kindergarten parents","Committee members"],
+ c_e:["People with limited mobility and people with infants or toddlers","Whoever arrives earliest, in the order they arrive","Kindergarten parents, since they arrive first","Committee members and parents on duty"],
  ex_e:"Lot 1 is the priority lot for <b>people with limited mobility and people bringing infants or toddlers</b>. Faculty and staff may use it only when Lot 2 is full.",
  p:"P.4"},
 
 {ch:2,when:function(p){return !p.priority;},img:"lots",
  q:"優先対象ではない自分が\n<b>第1駐車場</b> を使うときの 制限は？",
- c:["短時間（約10分以内）のみ","1時間以内","下校時だけ使える","制限はない"],a:0,
+ c:["短時間（約10分以内）のみ","1時間以内なら駐めてよい","下校の時間帯だけ使える","とくに制限はない"],a:0,
  ex:"優先対象以外の方の第1駐車場利用は<b>短時間（約10分以内）</b>に限られます。校舎前駐車場の混雑緩和による安全確保が目的です。",
  q_e:"You are not in the priority group.\nWhat limit applies if you use <b>Lot 1</b>?",
- c_e:["Short stays only — about 10 minutes","Up to one hour","Only at pickup time","There is no limit"],
+ c_e:["Short stays only — about 10 minutes","Up to one hour is fine","Only during the pickup window","There is no limit at all"],
  ex_e:"If you are not in the priority group, use of Lot 1 is limited to <b>a short stay of about 10 minutes</b>. The point is to keep the lot in front of the building from filling up.",
  p:"P.4, P.11〜13"},
 
@@ -2097,19 +2151,19 @@ var Q = [
 /* ---------- 第3章 黄の秘石／朝の登校門 ---------- */
 {ch:3,when:function(p){return p.kinder;},img:"in_kinder",
  q:"<b>幼稚部</b> の登校。\n時間と 方式は？",
- c:["8:40〜8:50／校舎正面ドライブスルー（正面カフェテリア前）","8:05〜8:35／校舎正面ドライブスルー","8:15〜8:35／校舎裏口ドライブスルー","8:40〜8:50／校舎裏口ドライブスルー"],a:0,
+ c:["8:40〜8:50／校舎正面ドライブスルー（正面カフェテリア前）","8:05〜8:35／校舎正面ドライブスルー（体育館前のみ）","8:15〜8:35／校舎裏口ドライブスルー（B1F入口）","8:40〜8:50／校舎裏口ドライブスルー（B1F入口）"],a:0,
  ex:"幼稚部の登校時間は<b>8:40〜8:50</b>、送迎方式は<b>校舎正面ドライブスルー（正面カフェテリア前）</b>です。必ず歩道側で降車してください。",
  q_e:"<b>Kindergarten</b> drop-off.\nWhat time, and how?",
- c_e:["8:40-8:50 / front drive-thru, at the cafeteria","8:05-8:35 / front drive-thru","8:15-8:35 / back-entrance drive-thru","8:40-8:50 / back-entrance drive-thru"],
+ c_e:["8:40-8:50 / front drive-thru, at the cafeteria","8:05-8:35 / front drive-thru, by the gym only","8:15-8:35 / back-entrance drive-thru, on B1","8:40-8:50 / back-entrance drive-thru, on B1"],
  ex_e:"Kindergarten drop-off is <b>8:40-8:50</b> at the <b>front drive-thru by the cafeteria</b>. Always let children out on the sidewalk side.",
  p:"P.6"},
 
 {ch:3,when:function(p){return p.g14||p.intl;},img:"in_g14",
  q:"<b>小学1〜4年生・国際部</b> の登校。\n時間と 方式は？",
- c:["8:05〜8:35／駐車場利用 または 校舎正面ドライブスルー","8:40〜8:50／校舎正面ドライブスルー","8:15〜8:35／校舎裏口ドライブスルー","8:05〜8:35／校舎裏口ドライブスルー"],a:0,
+ c:["8:05〜8:35／駐車場利用 または 校舎正面ドライブスルー","8:40〜8:50／駐車場利用 または 校舎正面ドライブスルー","8:15〜8:35／校舎裏口ドライブスルー（B1F入口）","8:05〜8:35／校舎裏口ドライブスルー（B1F入口）"],a:0,
  ex:"小学1〜4年生・国際部の登校時間は<b>8:05〜8:35</b>。<b>駐車場利用</b>、または<b>校舎正面ドライブスルー（正面カフェテリア前・体育館前）</b>です。",
  q_e:"<b>Grades 1-4 and the International Dept.</b> drop-off.\nWhat time, and how?",
- c_e:["8:05-8:35 / park, or use the front drive-thru","8:40-8:50 / front drive-thru","8:15-8:35 / back-entrance drive-thru","8:05-8:35 / back-entrance drive-thru"],
+ c_e:["8:05-8:35 / park, or use the front drive-thru","8:40-8:50 / park, or use the front drive-thru","8:15-8:35 / back-entrance drive-thru, on B1","8:05-8:35 / back-entrance drive-thru, on B1"],
  ex_e:"Drop-off for grades 1-4 and the International Dept. is <b>8:05-8:35</b>. Either <b>park in a lot</b> or use the <b>front drive-thru (by the cafeteria or by the gym)</b>.",
  p:"P.7"},
 
@@ -2118,7 +2172,7 @@ var Q = [
  c:["校舎入口まで送り届ける","駐車場で見送ればよい","車の中から見送る","門の前で別れる"],a:0,
  ex:"駐車後は<b>校舎入口まで生徒を送り届けて</b>ください。駐車場内は児童・生徒と車が交錯する場所です。",
  q_e:"Grades 1-4 and the International Dept.\nYou parked in a lot. What does the parent do next?",
- c_e:["Walk your child all the way to the building entrance","Watch from where you parked","Watch from inside the car","Say goodbye at the gate"],
+ c_e:["Walk your child all the way to the building entrance","See them off from where you parked the car","See them off from inside the car","Say goodbye at the gate and drive off"],
  ex_e:"After parking, <b>walk your child to the building entrance</b>. Cars and children cross paths constantly inside the lots.",
  p:"P.7"},
 
@@ -2133,10 +2187,10 @@ var Q = [
 
 {ch:3,when:function(p){return p.g14||p.intl||older(p);},img:"in_g14",
  q:"小学生以上が <b>8:40〜8:50</b> に遅刻して登校。\nこの時間の 正面カフェテリア前は…？",
- c:["幼稚部登園時間なので使えない。体育館前でドロップオフ","そのままカフェテリア前でよい","校舎裏口へ回る","公道で待って8:50を過ぎてから入る"],a:0,
+ c:["幼稚部登園時間なので使えない。体育館前でドロップオフ","そのままカフェテリア前でドロップオフしてよい","校舎裏口へ回ってドロップオフする","公道で待って8:50を過ぎてから構内に入る"],a:0,
  ex:"<b>8:40〜8:50は幼稚部の登園時間</b>のため、正面カフェテリア前ドライブスルーは利用できません。小学生以上でこの時間帯に遅刻登校する場合は<b>体育館前でドロップオフ</b>、または駐車場をご利用ください。",
  q_e:"An elementary or older student arrives late, at <b>8:40-8:50</b>.\nWhat about the front drive-thru by the cafeteria?",
- c_e:["It is reserved for kindergarten then — drop off by the gym instead","Use it as usual","Go around to the back entrance","Wait on the street until after 8:50"],
+ c_e:["It is reserved for kindergarten then — drop off by the gym instead","Use it as usual and drop off there","Go around and drop off at the back entrance","Wait on the street until after 8:50, then drive in"],
  ex_e:"<b>8:40-8:50 is kindergarten arrival time</b>, so the cafeteria drive-thru is not available. Older students arriving in that window should be <b>dropped off by the gym</b>, or you can park in a lot.",
  p:"P.7, P.15, P.17"},
 
@@ -2151,10 +2205,10 @@ var Q = [
 
 {ch:3,when:always,
  q:"「今日は急いでいるから、\n近い方のルートで降ろそう」——これは？",
- c:["だめ。必ず学年に応じた指定ルートを使う","空いていればよい","1回だけならよい","子どもが降りられるならよい"],a:0,
+ c:["だめ。必ず学年に応じた指定ルートを使う","空いているルートならよい","急いでいる日は1回だけよい","子どもが安全に降りられるならよい"],a:0,
  ex:"<b>必ず学年に応じた指定ルートをご利用ください。</b>学年ごとに時間とルートを分けているのは、同じ場所に車と子どもが集中するのを避けるためです。1台の例外が流れ全体を崩します。",
  q_e:"\"I'm in a hurry today, so I'll just use\nwhichever route is closer.\" Is that okay?",
- c_e:["No. Always use the route assigned to your child's grade","Fine if that route is empty","Fine just this once","Fine as long as your child can get out"],
+ c_e:["No. Always use the route assigned to your child's grade","Fine if the closer route is empty","Fine just this once, since you are in a hurry","Fine as long as your child can get out safely"],
  ex_e:"<b>Always use the route assigned to your child's grade.</b> Times and routes are split by grade precisely so that cars and children do not pile up in one place. One car taking a shortcut breaks the flow for everyone.",
  p:"P.5, P.10"},
 
@@ -2170,10 +2224,10 @@ var Q = [
 
 {ch:4,when:function(p){return p.kinder||p.intl;},img:"lots",
  q:"幼稚部・国際部のお迎え。\n車の中で 待っていればよい？",
- c:["いいえ。駐車場に駐車し、保護者が教室までお迎えに行く","はい。先生が連れて来てくれる","正面玄関の前で待つ","校舎裏口で待つ"],a:0,
+ c:["いいえ。駐車場に駐車し、保護者が教室までお迎えに行く","はい。先生が車のところまで連れて来てくれる","正面玄関の前に駐めて待っていればよい","校舎裏口の列に並んで待っていればよい"],a:0,
  ex:"幼稚部・国際部のピックアップ方法は<b>駐車場利用</b>で、<b>保護者が教室までお迎え</b>に行きます（校舎に入るので<b>保護者ID</b>が必要）。混雑緩和のため出来る限り第3駐車場をご利用ください。",
  q_e:"Kindergarten and International Dept. pickup.\nMay you just wait in the car?",
- c_e:["No. Park, then walk to the classroom to collect your child","Yes, a teacher brings them out","Wait in front of the main entrance","Wait at the back entrance"],
+ c_e:["No. Park, then walk to the classroom to collect your child","Yes, a teacher brings them out to your car","Park in front of the main entrance and wait","Wait in the line at the back entrance"],
  ex_e:"For these two groups you <b>park in a lot</b> and <b>walk to the classroom</b> (you are entering the building, so you need your <b>parent ID</b>). Use Lot 3 when you can.",
  p:"P.10, P.11"},
 
@@ -2195,23 +2249,24 @@ var Q = [
  ex_e:"When you have siblings <b>in kindergarten and in the International Dept.</b>, collect the <b>kindergartner first, then the International Dept. student</b> (12:30, then 12:35). Note: this ordering rule applies only to that combination.",
  p:"P.11"},
 
-/* ★小1〜4年の正面ドライブスルーの「2名」条件は、運営委員会からの追記。
+/* ★小1〜4年の正面ドライブスルーの「2名」条件。
+   2026.08.13 の更新で配布資料 P.12 の本文に入った（それまでは運営委員会からの追記）。
    別問題にすると「教室まで迎えに行かなくてよい」と読まれる余地が残るため、
    ピックアップ本体の正解に組み込んである（依頼者の指示）。 */
 {ch:4,when:function(p){return p.g14;},img:"out_g14",
  q:"<b>小学1〜4年生</b> のピックアップ。\n時刻と 方法は？",
  c:["15:10〜15:30／駐車場利用（教室までお迎え）または 正面ドライブスルー（ドライバー1名＋教室まで行く方1名の 計2名でお迎えに来た場合のみ）",
-    "15:10〜15:30／正面ドライブスルー（ドライバー1名のみでお迎えに来た場合に限る）",
-    "15:10〜15:30／校舎裏口ドライブスルー",
-    "15:20〜／校舎裏口ドライブスルー"],a:0,
- ex:"小学1〜4年生のピックアップは<b>15:10〜15:30</b>。<b>駐車場利用</b>（教室までお迎え）が基本です。<br><b>【運営委員会からの追記】</b>校舎正面ドライブスルー（体育館前・カフェテリア前）を利用できるのは、<b>ドライバー1名・教室まで行く方1名の計2名でお迎えに来た場合</b>です。運転手は車に残り、もう1名が教室まで迎えに行って車まで連れて来ます。<b>お子さんだけをドライブスルーで待ち合わせることはできません。</b><br><small>（2026年度運営委員会からの追記。配布資料の本文には明記されていないため、次年度の資料改訂で追記予定の項目です）</small>",
+    "15:10〜15:30／正面ドライブスルー（ドライバー1名のみでお迎えに来た場合に限り 使えます。運転手は車に残ります）",
+    "15:10〜15:30／校舎裏口ドライブスルー（ピックアップカードをフロントガラスに掲示して 列で待ちます）",
+    "15:20〜15:30／校舎裏口ドライブスルー（弟妹がいる場合の 開始時刻に合わせて 並びます）"],a:0,
+ ex:"小学1〜4年生のピックアップは<b>15:10〜15:30</b>。<b>駐車場利用</b>（教室までお迎え）が基本です。<br><b>【8月13日更新】</b>校舎正面ドライブスルー（体育館前・カフェテリア前）を<b>利用できるのは、ドライバー1名・教室まで行く方1名の計2名でお迎えに来た場合のみ</b>です。運転手は車に残り、もう1名が教室まで迎えに行って車まで連れて来ます。<b>お子さんだけをドライブスルーで待ち合わせることはできません。</b>",
  q_e:"Pickup for <b>grades 1-4</b>.\nWhat time, and how?",
  c_e:["15:10-15:30 / park and walk to the classroom, or use the front drive-thru (only if two adults come: one driver plus one person who walks to the classroom)",
-      "15:10-15:30 / front drive-thru (only if one adult comes alone as the driver)",
-      "15:10-15:30 / back-entrance drive-thru",
-      "From 15:20 / back-entrance drive-thru"],
- ex_e:"Pickup for grades 1-4 is <b>15:10-15:30</b>. The standard way is to <b>park and walk to the classroom</b>.<br><b>[Added by the operating committee]</b> You may use the front drive-thru (by the gym or the cafeteria) <b>only when two adults come: one stays with the car as the driver, and one walks to the classroom</b> and brings the child back to the car. <b>A child may not simply meet you at the drive-thru alone.</b><br><small>(Added by the 2026 operating committee. This is not spelled out in the handout text and is slated to be added at the next revision.)</small>",
- p:"P.12（運営委員会 追記）"},
+      "15:10-15:30 / front drive-thru, which you may use only if one adult comes alone as the driver, while the driver stays with the car",
+      "15:10-15:30 / back-entrance drive-thru, waiting in line with your pickup card displayed",
+      "15:20-15:30 / back-entrance drive-thru, using the slot for families with a younger sibling"],
+ ex_e:"Pickup for grades 1-4 is <b>15:10-15:30</b>. The standard way is to <b>park and walk to the classroom</b>.<br><b>[Updated August 13]</b> You may use the front drive-thru (by the gym or the cafeteria) <b>only when two adults come: one stays with the car as the driver, and one walks to the classroom</b> and brings the child back to the car. <b>A child may not simply meet you at the drive-thru alone.</b>",
+ p:"P.12"},
 
 {ch:4,when:function(p){return older(p)&&!pmMix(p);},
  q:"弟妹がいない場合の 裏口ピックアップ開始時刻。\n正しい組み合わせは？",
@@ -2233,28 +2288,28 @@ var Q = [
 
 {ch:4,when:function(p){return older(p);},img:"card",
  q:"裏口ドライブスルーに <b>ピックアップカード</b> は必要？",
- c:["必要。白い紙にクラスと名前を書きフロントガラスに掲示","不要。名前を伝えればよい","初回だけ必要","雨の日は不要"],a:0,
+ c:["必要。白い紙にクラスと名前を書きフロントガラスに掲示","不要。窓から名前を伝えれば通してもらえる","初回のお迎えのときだけ必要","雨の日は掲示しなくてよい"],a:0,
  ex:"<b>必要です。</b>白の紙に生徒の<b>クラスと名前</b>を書き、<b>フロントガラスに外から見えるよう掲示</b>してください。車の外から教員が見えるサイズで、<b>ピックアップする生徒全員分</b>を記載します。",
  q_e:"Do you need a <b>pickup card</b> for the back-entrance drive-thru?",
- c_e:["Yes. White paper with class and name, displayed on the windshield","No. Just tell them the name","Only the first time","Not on rainy days"],
+ c_e:["Yes. White paper with class and name, displayed on the windshield","No. Just tell them the name through the window","Only the first time you pick up","Not needed on rainy days"],
  ex_e:"<b>Yes.</b> On <b>white paper</b>, write each student's <b>class and name</b> and <b>display it on the windshield</b> so it is visible from outside the car. Make the letters big enough for a teacher to read from outside, and list <b>every student you are picking up</b>.",
  p:"P.13, P.17, P.18"},
 
 {ch:4,when:function(p){return older(p);},img:"card",
  q:"ピックアップカードを 忘れてしまった。\nどうなる？",
- c:["15:20以降のピックアップとなり、列から一旦退出","口頭で伝えればそのまま通れる","次回から持てばよい","最後尾に並び直すだけ"],a:0,
+ c:["15:20以降のピックアップとなり、列から一旦退出","口頭で名前を伝えればそのまま列を通れる","次回から持って来ればよい","そのまま最後尾に並び直すだけ"],a:0,
  ex:"カードがない場合は<b>15:20以降のピックアップとなり、列からいったん退出</b>していただくことがあります。誰を引き渡すかを安全に確認するための運用です。前日に用意しておきましょう。",
  q_e:"You forgot your pickup card.\nWhat happens?",
- c_e:["You will be picked up after 15:20 and may be asked to leave the line","Just say the name and you can stay in line","Bring it next time and it's fine","You only have to go to the back of the line"],
+ c_e:["You will be picked up after 15:20 and may be asked to leave the line","Just say the name at the window and you can stay in line","Bring it next time and it's fine","You only have to go to the back of the line"],
  ex_e:"Without the card, you may be asked to <b>leave the line and pick up after 15:20</b>. It is how staff safely confirm who is being released to whom. Get the card ready the night before.",
  p:"P.17, P.18"},
 
 {ch:4,when:function(p){return older(p);},img:"in_g56",
  q:"小5以上が <b>裏口</b> ドライブスルーなのは なぜ？",
- c:["駐車場の混雑緩和と、低学年に階段昇降をさせないため","裏口の方が広いから","高学年は早く帰るから","正面が工事中だから"],a:0,
+ c:["駐車場の混雑緩和と、低学年に階段昇降をさせないため","裏口の方が道が広くて車を停めやすいから","高学年は授業が早く終わって帰るから","正面が工事中で通れないから"],a:0,
  ex:"理由は2つです。①<b>駐車場の混雑緩和</b>。②<b>裏口が地下1階、低学年の教室は1階</b>のため、低学年は大きな荷物を持った階段の昇り降りが必要になってしまうから。だから階段を使える高学年が裏口を担当します。",
  q_e:"Why is grade 5 and up sent to the <b>back entrance</b>?",
- c_e:["To ease congestion in the lots, and to keep younger children off the stairs","The back entrance is wider","Older students leave earlier","The front is under construction"],
+ c_e:["To ease congestion in the lots, and to keep younger children off the stairs","The back entrance is wider and easier to drive through","Older students finish class and leave earlier","The front is under construction and closed"],
  ex_e:"Two reasons. (1) <b>It eases congestion in the lots.</b> (2) <b>The back entrance is on B1 and the younger grades' classrooms are on floor 1</b>, so younger children would have to carry heavy bags up and down stairs. Older students, who can manage the stairs, use the back.",
  p:"P.17"},
 
@@ -2269,10 +2324,10 @@ var Q = [
 
 {ch:4,when:function(p){return p.g14;},img:"out_g14",
  q:"小1〜4年生の <b>校舎正面ドライブスルー</b>。\nピックアップ場所は？",
- c:["体育館前 または カフェテリア前","カフェテリア前のみ","校舎裏口","正面玄関の前"],a:0,
+ c:["体育館前 または カフェテリア前","正面カフェテリア前のみ（体育館前は使えません）","校舎裏口のドライブスルー","正面玄関の前のロータリー"],a:0,
  ex:"小1〜4年生の校舎正面ドライブスルーは<b>体育館前 または カフェテリア前</b>でピックアップします。運転手は車から離れず、前が空いたら速やかに前進してください（利用できるのは<b>計2名でお迎えに来た場合</b>です）。",
  q_e:"The <b>front drive-thru</b> for grades 1-4.\nWhere is the pickup point?",
- c_e:["By the gym or by the cafeteria","By the cafeteria only","The back entrance","In front of the main entrance"],
+ c_e:["By the gym or by the cafeteria","By the cafeteria only (not by the gym)","The back-entrance drive-thru","In front of the main entrance"],
  ex_e:"For grades 1-4, the front drive-thru picks up <b>by the gym or by the cafeteria</b>. The driver stays with the car and pulls forward promptly (and remember, the front drive-thru is only for families who come <b>with two adults</b>).",
  p:"P.10, P.12"},
 
@@ -2281,10 +2336,10 @@ var Q = [
    「兄弟・姉妹がいる場合」の専用ルール（P.9 / P.14）が実際に適用される。 */
 {ch:5,when:function(p){return mix(p)||(p.kinder&&groups(p).length>=2);},
  q:"兄弟姉妹がいる。\n「それぞれの学年のルールを 別々に守れば\nよい」——これで 合っている？",
- c:["ちがう。資料に「兄弟・姉妹がいる場合」の扱いが別に定められている","合っている","早い方の学年に合わせればよい","遅い方の学年に合わせればよい"],a:0,
+ c:["ちがう。資料に「兄弟・姉妹がいる場合」の扱いが別に定められている","合っている。それぞれの学年のルールを守ればよい","いつも早い方の学年の時刻に合わせればよい","いつも遅い方の学年の時刻に合わせればよい"],a:0,
  ex:"登校・下校それぞれに<b>「兄弟・姉妹がいる場合」の専用の扱い</b>が定められています（登校＝P.9／下校＝P.14）。学年ごとのルールを単純に足し合わせるのではなく、まずこのページを確認してください。<b>【原則】と【例外】</b>の2段構えになっているのが特徴です。",
  q_e:"You have children in more than one grade group.\n\"I'll just follow each grade's rule separately.\" Is that right?",
- c_e:["No. The handout has separate rules for families with siblings","Yes, that's right","Follow the earlier grade's time","Follow the later grade's time"],
+ c_e:["No. The handout has separate rules for families with siblings","Yes, that's right — just follow each child's grade","Always follow the earlier grade's time","Always follow the later grade's time"],
  ex_e:"There are <b>separate rules for families with siblings</b> — one set for drop-off (P.9) and one for pickup (P.14). Do not simply add the per-grade rules together; check those pages first. Each is written as a <b>general rule plus an exception</b>.",
  p:"P.5, P.9, P.10, P.14"},
 
@@ -2299,55 +2354,146 @@ var Q = [
 
 {ch:5,when:function(p){return p.kinder&&(p.g14||p.intl);},img:"in_g14",
  q:"【登校】長子が <b>小1〜4年・国際部</b>、\n<b>幼稚部</b> の弟妹がいる。どうする？",
- c:["駐車場に停め校舎入口まで送る／または正面ドライブスルー。幼稚部園児はカフェテリアで待機","幼稚部の8:40に合わせて全員で登校","校舎裏口ドライブスルーを使う","別々に2回送る"],a:0,
+ c:["駐車場に停め校舎入口まで送る／または正面ドライブスルー。幼稚部園児はカフェテリアで待機","幼稚部の8:40〜8:50に合わせて、全員そろって正面ドライブスルー","校舎裏口ドライブスルーを使い、B1Fで降ろす","上の子と下の子を別々に2回に分けて送る"],a:0,
  ex:"<b>駐車場に駐車し保護者が校舎入口まで送り届ける</b>か、<b>校舎正面ドライブスルー</b>をご利用ください。<b>幼稚部の園児はカフェテリアで登園時間（8:40）まで待機</b>します。",
  q_e:"[Drop-off] Oldest child in <b>grades 1-4 or the International Dept.</b>,\nwith a younger sibling in <b>kindergarten</b>. What do you do?",
- c_e:["Park and walk them to the entrance, or use the front drive-thru; the kindergartner waits in the cafeteria","Bring everyone at the kindergarten time of 8:40","Use the back-entrance drive-thru","Make two separate trips"],
+ c_e:["Park and walk them to the entrance, or use the front drive-thru; the kindergartner waits in the cafeteria","Bring everyone together at the kindergarten time of 8:40-8:50 and use the front drive-thru","Use the back-entrance drive-thru and drop them off on B1","Make two separate trips, one for each child"],
  ex_e:"Either <b>park and walk them to the building entrance</b>, or use the <b>front drive-thru</b>. The <b>kindergartner waits in the cafeteria until 8:40</b>.",
  p:"P.9"},
 
+/* ★依頼者の指摘：「兄姉が付き添える」を編成でオンにすると、原則と例外の
+   どちらを聞かれているのか分からなくなる。原則は「兄姉が付き添えない日」の
+   ルートだと問題文に書き、日によって使い分けるものだと解説に書く。 */
 {ch:5,when:function(p){return mix(p);},img:"in_g14",
- q:"【登校】長子が <b>小5年生以上</b>、\n弟妹（小1〜4／国際部／幼稚部）がいる。\n<b>原則</b> はどうする？",
- c:["駐車場に駐車し、保護者が校舎入口まで送り届ける","校舎裏口ドライブスルーを使う","正面カフェテリア前で全員降ろす","長子だけ裏口、弟妹は別の車で"],a:0,
- ex:"<b>【原則】駐車場に駐車し、保護者が校舎入口まで送り届けてください。</b>幼稚部の園児はカフェテリアで登園時間まで待機します。",
- q_e:"[Drop-off] Oldest child in <b>grade 5 or up</b>, with a younger sibling\n(grades 1-4, International Dept., or kindergarten).\nWhat is the <b>general rule</b>?",
- c_e:["Park, and the parent walks them to the building entrance","Use the back-entrance drive-thru","Drop everyone off at the front cafeteria","Oldest at the back entrance, younger ones in another car"],
- ex_e:"<b>General rule: park, and the parent walks the children to the building entrance.</b> A kindergartner then waits in the cafeteria until arrival time.",
+ q:"【登校】長子が <b>小5年生以上</b>、\n弟妹（小1〜4／国際部／幼稚部）がいる。\n<b>原則（兄姉が弟妹に付き添えない日）</b> はどうする？",
+ c:["駐車場に駐車し、保護者が校舎入口まで送り届ける",
+    "校舎裏口ドライブスルーを使い、弟妹だけ先に降ろす",
+    "正面カフェテリア前で 全員まとめて降ろす",
+    "長子だけ裏口で降ろし、弟妹は別の車で送る"],a:0,
+ ex:"<b>【原則】駐車場に駐車し、保護者が校舎入口まで送り届けてください。</b>幼稚部の園児はカフェテリアで登園時間まで待機します。<br><b>原則は「兄姉の付き添いがない日」のルート</b>です。兄姉が弟妹の階段昇降をサポートできる日は<b>【例外】</b>の裏口ドライブスルーも選べます。<b>同じご家庭でも日によって変わります</b>ので、その日どちらなのかで決めてください。",
+ q_e:"[Drop-off] Oldest child in <b>grade 5 or up</b>, with a younger sibling\n(grades 1-4, International Dept., or kindergarten).\nWhat is the <b>general rule — the one for days the older sibling cannot come along</b>?",
+ c_e:["Park, and the parent walks them to the building entrance",
+      "Use the back-entrance drive-thru and let the younger one out first",
+      "Drop all of them off together at the front cafeteria",
+      "Let the oldest out at the back entrance and bring the younger one in another car"],
+ ex_e:"<b>General rule: park, and the parent walks the children to the building entrance.</b> A kindergartner then waits in the cafeteria until arrival time.<br><b>The general rule is the route for days when no older sibling comes along.</b> On days a grade 5+ sibling can help the younger one on the stairs, the <b>exception</b> — the back-entrance drive-thru — is also open to you. <b>It can differ from day to day in the same family</b>, so decide by what is true that morning.",
  p:"P.9"},
 
 {ch:5,when:function(p){return mix(p);},img:"in_g56",
- q:"【登校】長子が <b>小5年生以上</b>、弟妹がいる家庭。\n<b>原則は「駐車場に停めて保護者が校舎入口まで送る」</b>。\nでは <b>【例外】として校舎裏口ドライブスルー</b> が\n使えるのは どんなとき？",
- c:["小5以上の兄姉が弟妹の階段昇降をサポートできる場合","保護者が急いでいる場合","雨の日","弟妹が小1〜4年生の場合はいつでも"],a:0,
- ex:"<b>【例外】小5年生以上の兄・姉が弟妹の階段昇降をサポートできる場合</b>は、校舎裏口ドライブスルーを利用できます。裏口はB1Fなので階段の付き添いが前提です。<b>幼稚部の園児がいる場合は、兄姉がカフェテリアまで送り届けて</b>ください。",
- q_e:"[Drop-off] Oldest child in <b>grade 5 or up</b>, with a younger sibling.\n<b>The general rule is to park and walk them to the entrance.</b>\nWhen may you instead take the <b>exception — the back-entrance drive-thru</b>?",
- c_e:["When the grade 5+ sibling can help the younger one on the stairs","When the parent is in a hurry","On rainy days","Any time the younger sibling is in grades 1-4"],
- ex_e:"<b>Exception: when an older sibling in grade 5 or up can help the younger child on the stairs</b>, you may use the back-entrance drive-thru. The back entrance is on B1, so stair help is the condition. <b>If a kindergartner is along, the older sibling must walk them to the cafeteria.</b>",
+ q:"【登校】長子が <b>小5年生以上</b>、弟妹がいる家庭。\n<b>原則（兄姉が付き添えない日）は「駐車場に停めて保護者が校舎入口まで送る」</b>。\nでは <b>【例外】として校舎裏口ドライブスルー</b> が\n使えるのは どんな日？",
+ c:["小5以上の兄姉が 弟妹の階段昇降をサポートできる日",
+    "保護者が急いでいて 校舎まで歩く時間がない日",
+    "雨や雪で 駐車場から歩かせたくない日",
+    "弟妹が小1〜4年生であれば どんな日でも使える"],a:0,
+ ex:"<b>【例外】小5年生以上の兄・姉が弟妹の階段昇降をサポートできる場合</b>は、校舎裏口ドライブスルーを利用できます。裏口はB1Fなので階段の付き添いが前提です。<b>幼稚部の園児がいる場合は、兄姉がカフェテリアまで送り届けて</b>ください。<br><b>兄姉が付き添えない日は【原則】に戻ります</b>（駐車場に駐車し、保護者が校舎入口まで）。天気や保護者の都合は例外の条件ではありません。",
+ q_e:"[Drop-off] Oldest child in <b>grade 5 or up</b>, with a younger sibling.\n<b>The general rule — for days the older sibling cannot come along — is to park and walk them to the entrance.</b>\nOn what kind of day may you instead take the <b>exception, the back-entrance drive-thru</b>?",
+ c_e:["On days the grade 5+ sibling can help the younger one on the stairs",
+      "On days the parent is in a hurry and has no time to walk to the building",
+      "On days it rains or snows and you would rather not walk from the lot",
+      "On any day at all, as long as the younger sibling is in grades 1-4"],
+ ex_e:"<b>Exception: when an older sibling in grade 5 or up can help the younger child on the stairs</b>, you may use the back-entrance drive-thru. The back entrance is on B1, so stair help is the condition. <b>If a kindergartner is along, the older sibling must walk them to the cafeteria.</b><br><b>On days the older sibling cannot come along, you are back on the general rule</b> — park, and a parent walks them to the entrance. Weather and the parent's schedule are not conditions for the exception.",
  p:"P.9"},
 
 {ch:5,when:function(p){return pmMix(p);},img:"lots",
- q:"【下校】長子が <b>小5年生以上</b>、\n<b>小1〜4年生</b> の弟妹がいる。<b>原則</b> は？",
- c:["保護者が各生徒の教室まで迎えに行く","校舎裏口ドライブスルーで全員まとめて","正面ドライブスルーで全員まとめて","長子に弟妹を連れて出てきてもらう"],a:0,
- ex:"<b>【原則】保護者が各生徒の教室まで迎えに行ってください。</b>学年で下校ルートが違うため、まとめて1か所で受け取るのが原則ではありません。駐車場をご利用ください（下校時は出来る限り第3駐車場）。",
- q_e:"[Pickup] Oldest child in <b>grade 5 or up</b>,\nwith a younger sibling in <b>grades 1-4</b>. What is the <b>general rule</b>?",
- c_e:["The parent goes to each child's classroom","Collect everyone at once in the back-entrance drive-thru","Collect everyone at once in the front drive-thru","Have the older child bring the younger one out"],
- ex_e:"<b>General rule: the parent goes to each child's classroom.</b> Because the grades use different pickup routes, collecting everyone in one spot is not the default. Park in a lot — at pickup time, Lot 3 whenever possible.",
+ q:"【下校】長子が <b>小5年生以上</b>、\n<b>小1〜4年生</b> の弟妹がいる。\n<b>原則（兄姉が弟妹を迎えに行けない日）</b> は？",
+ c:["保護者が各生徒の教室まで迎えに行く",
+    "校舎裏口ドライブスルーで 全員まとめて受け取る",
+    "校舎正面ドライブスルーで 全員まとめて受け取る",
+    "長子に 弟妹を連れて出てきてもらい 車で待つ"],a:0,
+ ex:"<b>【原則】保護者が各生徒の教室まで迎えに行ってください。</b>学年で下校ルートが違うため、まとめて1か所で受け取るのが原則ではありません。駐車場をご利用ください（下校時は出来る限り第3駐車場）。<br><b>原則は「兄姉が弟妹を迎えに行けない日」のルート</b>です。兄姉が迎えに行ける日は<b>【例外】</b>の裏口ドライブスルー（15:20〜）も選べます。<b>その日どちらなのかで決めてください。</b>",
+ q_e:"[Pickup] Oldest child in <b>grade 5 or up</b>, with a younger sibling in <b>grades 1-4</b>.\nWhat is the <b>general rule — the one for days the older sibling cannot collect them</b>?",
+ c_e:["The parent goes to each child's classroom",
+      "Collect all of them at once in the back-entrance drive-thru",
+      "Collect all of them at once in the front drive-thru",
+      "Have the older child bring the younger one out while you wait in the car"],
+ ex_e:"<b>General rule: the parent goes to each child's classroom.</b> Because the grades use different pickup routes, collecting everyone in one spot is not the default. Park in a lot — at pickup time, Lot 3 whenever possible.<br><b>The general rule is the route for days the older sibling cannot collect the younger one.</b> On days they can, the <b>exception</b> — the back-entrance drive-thru from 15:20 — is also open to you. <b>Decide by what is true that afternoon.</b>",
  p:"P.14"},
 
 {ch:5,when:function(p){return pmMix(p);},img:"out_g56",
- q:"【下校】長子が <b>小5年生以上</b>、<b>小1〜4年生</b> の弟妹がいる家庭。\n<b>原則は「保護者が各教室まで迎えに行く」</b>。\nでは <b>【例外】の校舎裏口ドライブスルー</b> の\n時刻と 待機場所は？",
- c:["15:20〜／兄姉が弟妹を教室まで迎え、B1F裏口で待機","15:10〜／正面玄関で待機","15:15〜／カフェテリアで待機","15:30〜／駐車場で待機"],a:0,
- ex:"<b>【例外】小5以上の兄・姉が弟妹を迎えに行けるなら校舎裏口ドライブスルーを利用できます。</b>ピックアップ時間は<b>15:20〜</b>。兄姉が弟妹を教室まで迎えに行き、<b>地下1階（B1F）裏口で待機</b>してください。",
- q_e:"[Pickup] Oldest child in <b>grade 5 or up</b> with a sibling in <b>grades 1-4</b>.\n<b>The general rule is that the parent goes to each classroom.</b>\nFor the <b>exception — the back-entrance drive-thru</b>,\nwhat is the time and where do they wait?",
- c_e:["From 15:20; the older sibling collects the younger one and they wait at the B1 back entrance","From 15:10; wait at the main entrance","From 15:15; wait in the cafeteria","From 15:30; wait in the parking lot"],
- ex_e:"<b>Exception: if the grade 5+ sibling can collect the younger child, you may use the back-entrance drive-thru.</b> Pickup is <b>from 15:20</b>. The older sibling goes to the younger child's classroom, and the two <b>wait at the B1 back entrance</b>.",
+ q:"【下校】長子が <b>小5年生以上</b>、<b>小1〜4年生</b> の弟妹がいる家庭。\n<b>原則（兄姉が迎えに行けない日）は「保護者が各教室まで迎えに行く」</b>。\nでは <b>【例外】＝兄姉が迎えに行ける日の 校舎裏口ドライブスルー</b> の\n時刻と 待機場所は？",
+ c:["15:20〜／兄姉が弟妹を教室まで迎え、B1F裏口で待機",
+    "15:10〜／兄姉が弟妹を教室まで迎え、正面玄関で待機",
+    "15:15〜／兄姉が弟妹を教室まで迎え、カフェテリアで待機",
+    "15:30〜／兄姉が弟妹を教室まで迎え、駐車場で待機"],a:0,
+ ex:"<b>【例外】小5以上の兄・姉が弟妹を迎えに行けるなら校舎裏口ドライブスルーを利用できます。</b>ピックアップ時間は<b>15:20〜</b>。兄姉が弟妹を教室まで迎えに行き、<b>地下1階（B1F）裏口で待機</b>してください。<b>15:30までに完了</b>です。<br>兄姉が迎えに行けない日は<b>【原則】に戻り、保護者が各教室まで</b>迎えに行きます。",
+ q_e:"[Pickup] Oldest child in <b>grade 5 or up</b> with a sibling in <b>grades 1-4</b>.\n<b>On days the older sibling cannot collect them, the general rule is that the parent goes to each classroom.</b>\nFor the <b>exception — the back-entrance drive-thru on days the older sibling can</b>,\nwhat is the time and where do they wait?",
+ c_e:["From 15:20; the older sibling collects the younger one and they wait at the B1 back entrance",
+      "From 15:10; the older sibling collects the younger one and they wait at the main entrance",
+      "From 15:15; the older sibling collects the younger one and they wait in the cafeteria",
+      "From 15:30; the older sibling collects the younger one and they wait in the parking lot"],
+ ex_e:"<b>Exception: if the grade 5+ sibling can collect the younger child, you may use the back-entrance drive-thru.</b> Pickup is <b>from 15:20</b>, and you must <b>finish by 15:30</b>. The older sibling goes to the younger child's classroom, and the two <b>wait at the B1 back entrance</b>.<br>On days the older sibling cannot do that, you are back on the <b>general rule: a parent goes to each classroom</b>.",
  p:"P.14"},
+
+/* ★「兄弟姉妹」の章に出題がなかった組み合わせを埋める（依頼者の指示）。
+   国際部＋小1〜4年、小5・6＋中高は P.9 / P.14 の兄弟姉妹規定には当たらないが、
+   「朝はまとめられるのに午後は別」「開始時刻がどちらに寄るか」で必ず迷う。
+   ここを埋めると、どの家庭にも第5章の秘石が出る。 */
+{ch:5,when:function(p){return p.intl&&p.g14&&!older(p)&&!p.kinder;},img:"in_g14",
+ q:"【登校】<b>国際部</b> と <b>小1〜4年生</b> の兄弟姉妹。\n朝の 送りは どうなる？",
+ c:["どちらも 8:05〜8:35・方式も同じなので 1回でまとめられる",
+    "国際部が 7:45〜8:05、小1〜4年が 8:05〜8:35 と 別になる",
+    "小1〜4年が 8:05〜8:35、国際部が 8:40〜8:50 と 別になる",
+    "どちらも 8:15〜8:35 で、校舎裏口ドライブスルーを 使う"],a:0,
+ ex:"国際部と小学1〜4年生は<b>どちらも8:05〜8:35</b>、方式も同じ（<b>駐車場利用で校舎入口まで送り届ける、または校舎正面ドライブスルー</b>）です。朝は<b>1回でまとめられます</b>。<br>ただし<b>下校は別々</b>——国際部12:35／小1〜4年15:10〜15:30なので、<b>午後は2回</b>になります。朝と午後で事情が変わるので、そこだけ覚えてください。",
+ q_e:"[Drop-off] Siblings in the <b>International Dept.</b> and <b>grades 1-4</b>.\nWhat does the morning look like?",
+ c_e:["Both are 8:05-8:35 by the same methods, so one trip covers them",
+      "The International Dept. is 7:45-8:05 and grades 1-4 are 8:05-8:35, so they split",
+      "Grades 1-4 are 8:05-8:35 and the International Dept. is 8:40-8:50, so they split",
+      "Both are 8:15-8:35 and both use the back-entrance drive-thru"],
+ ex_e:"The International Dept. and grades 1-4 are <b>both 8:05-8:35</b>, with the same options (<b>park and walk them to the entrance, or use the front drive-thru</b>). One trip covers both in the morning.<br><b>Pickup is a different story</b> — 12:35 for the International Dept. and 15:10-15:30 for grades 1-4, so the <b>afternoon takes two trips</b>. That difference between morning and afternoon is the thing to remember.",
+ p:"P.7, P.11, P.12"},
+
+{ch:5,when:function(p){return p.intl&&p.g14&&!older(p)&&!p.kinder;},img:"out_g14",
+ q:"【下校】<b>国際部</b> と <b>小1〜4年生</b> の兄弟姉妹。\n午後の お迎えは 何回になる？",
+ c:["2回。国際部12:35と 小1〜4年15:10〜15:30で 時間帯が別",
+    "1回。国際部の12:35に そろえて 2人まとめて迎える",
+    "1回。小1〜4年の15:10に そろえて 2人まとめて迎える",
+    "2回。ただし どちらも 正面ドライブスルーで 待ち合わせる"],a:0,
+ ex:"下校時刻は<b>国際部12:35／小学1〜4年生15:10〜15:30</b>で、<b>時間帯がまったく別</b>です。<b>1日2回のお迎え</b>になります。どちらも<b>駐車場に駐車して教室までお迎え</b>が基本（小1〜4年の正面ドライブスルーは<b>計2名でお迎えに来た場合</b>のみ）。<br><small>※「先に幼稚部 → その後 国際部」の順番ルールは<b>幼稚部と国際部</b>の兄弟姉妹に限った規定です（P.11）。この組み合わせには当てはまりません。</small>",
+ q_e:"[Pickup] Siblings in the <b>International Dept.</b> and <b>grades 1-4</b>.\nHow many trips does the afternoon take?",
+ c_e:["Two. The International Dept. is 12:35 and grades 1-4 are 15:10-15:30 — separate windows",
+      "One. Collect both of them at the International Dept. time of 12:35",
+      "One. Collect both of them at the grades 1-4 time of 15:10",
+      "Two, but you meet both of them at the front drive-thru"],
+ ex_e:"Pickup is <b>12:35 for the International Dept. and 15:10-15:30 for grades 1-4</b> — <b>completely separate windows</b>, so this is <b>two trips in one day</b>. For both, the standard way is to <b>park and walk to the classroom</b> (the front drive-thru for grades 1-4 is only for families who come <b>with two adults</b>).<br><small>Note: the \"kindergarten first, then the International Dept.\" ordering rule applies only to siblings in <b>kindergarten and the International Dept.</b> (P.11). It does not apply to this pair.</small>",
+ p:"P.11, P.12"},
+
+{ch:5,when:function(p){return p.g56&&p.jh&&!younger(p);},img:"in_g56",
+ q:"【登校】<b>小5・6年</b> と <b>中高</b> の兄弟姉妹。\n朝の 送りは どうなる？",
+ c:["どちらも 8:15〜8:35・校舎裏口ドライブスルーなので 1回でまとめられる",
+    "中高が 8:05〜8:35、小5・6年が 8:15〜8:35 と 別になる",
+    "中高は校舎裏口、小5・6年は 正面カフェテリア前と 別になる",
+    "どちらも 8:40〜8:50 の 校舎正面ドライブスルーに なる"],a:0,
+ ex:"登校は<b>小学5年生以上でひとまとめ</b>——小5・6年も中高も<b>8:15〜8:35・校舎裏口ドライブスルー</b>です。朝は<b>1回でまとめられます</b>。乗降は必ず歩道側で。<br>ただし<b>下校の開始時刻は寄せられます</b>——中高だけなら15:10〜ですが、<b>小5・6年を含むご家庭は15:15〜</b>です（P.13）。",
+ q_e:"[Drop-off] Siblings in <b>grades 5-6</b> and in <b>Jr. High / High School</b>.\nWhat does the morning look like?",
+ c_e:["Both are 8:15-8:35 at the back-entrance drive-thru, so one trip covers them",
+      "Jr. High/High is 8:05-8:35 and grades 5-6 are 8:15-8:35, so they split",
+      "Jr. High/High uses the back entrance and grades 5-6 the front cafeteria",
+      "Both use the front drive-thru in the 8:40-8:50 window"],
+ ex_e:"Drop-off treats <b>everyone from grade 5 up as one group</b>: grades 5-6 and Jr. High/High School are all <b>8:15-8:35 at the back-entrance drive-thru</b>. One trip covers both. Always let them out on the sidewalk side.<br><b>Pickup start times do differ, though</b> — Jr. High/High School alone would start at 15:10, but <b>a family that includes grades 5-6 starts at 15:15</b> (P.13).",
+ p:"P.8, P.13"},
+
+{ch:5,when:function(p){return p.g56&&p.jh&&!younger(p);},img:"out_g56",
+ q:"【下校】<b>小5・6年</b> と <b>中高</b> の兄弟姉妹。\n（小1〜4年の弟妹は いない）\n裏口ピックアップの 開始時刻は？",
+ c:["15:15〜（小5・6年を含むため）。15:30までに完了",
+    "15:10〜（中高を含むため）。15:30までに完了",
+    "15:20〜（兄弟姉妹がいるため）。15:30までに完了",
+    "中高は15:10、小5・6年は15:15で 2回に分けて迎える"],a:0,
+ ex:"開始時刻は<b>15:15〜</b>です。中高だけのお迎えなら15:10〜ですが、<b>小5・6年を含むご家庭は15:15〜</b>になります。<b>15:30までに完了</b>してください。2回に分ける必要はありません。<br><small>※15:20〜は「<b>小1〜4年の弟妹</b>がいる場合」の時刻です（P.14）。小5・6年と中高の組み合わせは、午後は「弟妹なし」にあたります。</small>",
+ q_e:"[Pickup] Siblings in <b>grades 5-6</b> and in <b>Jr. High / High School</b>\n(no younger sibling in grades 1-4).\nWhen does back-entrance pickup start for you?",
+ c_e:["15:15, because grades 5-6 are included; finish by 15:30",
+      "15:10, because Jr. High/High School is included; finish by 15:30",
+      "15:20, because there are siblings in the family; finish by 15:30",
+      "15:10 for Jr. High/High and 15:15 for grades 5-6, in two separate trips"],
+ ex_e:"You start at <b>15:15</b>. Jr. High/High School alone would start at 15:10, but <b>a family that includes grades 5-6 starts at 15:15</b>. <b>Finish by 15:30.</b> You do not need to make two trips.<br><small>Note: 15:20 is the slot for families with a <b>younger sibling in grades 1-4</b> (P.14). Grades 5-6 plus Jr. High/High counts as \"no younger sibling\" in the afternoon.</small>",
+ p:"P.13"},
 
 {ch:5,when:function(p){return p.kinder&&older(p);},
  q:"【下校】幼稚部と 小5以上の 兄弟姉妹。\n午後の 裏口の 時刻は？",
- c:["幼稚部は12:30に別便。午後は「弟妹なし」の時刻（小5・6は15:15／中高は15:10）","幼稚部に合わせて12:30","「弟妹あり」なので15:20","カフェテリアで15時まで待たせる"],a:0,
+ c:["幼稚部は12:30に別便。午後は「弟妹なし」の時刻（小5・6は15:15／中高は15:10）","幼稚部に合わせて全員12:30に迎えて、午後は裏口に行かなくてよい","幼稚部の弟妹がいるので、午後も「弟妹あり」の15:20に合わせて並ぶ","幼稚部の弟妹をカフェテリアで15時まで待たせて、そのまま一緒に裏口で帰る"],a:0,
  ex:"幼稚部のピックアップは<b>12:30・駐車場利用で教室までお迎え</b>。<b>2回の送迎</b>になります。<br>午後の裏口ドライブスルーでいう「弟妹」は<b>小1〜4年生</b>を指すため（P.14）、幼稚部の弟妹はすでに帰宅していて車にいません。したがって午後は<b>「弟妹なし」の時刻</b>＝小5・6は15:15〜／中高は15:10〜になります。<br><small>※これはP.13とP.14からの解釈です。当日の運用は現場の指示に従ってください。</small>",
  q_e:"[Pickup] Siblings in kindergarten and in grade 5 or up.\nWhat is your back-entrance time in the afternoon?",
- c_e:["Kindergarten goes home at 12:30 on a separate trip, so you use the \"no younger sibling\" time (15:15 for grades 5-6, 15:10 for Jr. High/High)","12:30, together with kindergarten","15:20, because you have a younger sibling","Have them wait in the cafeteria until 15:00"],
+ c_e:["Kindergarten goes home at 12:30 on a separate trip, so you use the \"no younger sibling\" time (15:15 for grades 5-6, 15:10 for Jr. High/High)","12:30, together with kindergarten — one trip for everyone, and no afternoon run at the back entrance","15:20, because a kindergartner still counts as a younger sibling in the afternoon at the back entrance","Have the kindergartner wait in the cafeteria until 15:00 and take everyone home at the back entrance"],
  ex_e:"Kindergarten pickup is <b>12:30 — park and walk to the classroom</b>. That means <b>two trips</b>.<br>In the afternoon back-entrance slots, \"younger sibling\" means <b>grades 1-4</b> (P.14), and your kindergartner is already home, not in the car. So you use the <b>\"no younger sibling\" time</b>: 15:15 for grades 5-6, 15:10 for Jr. High/High School.<br><small>Note: this is our reading of P.13 together with P.14. On the day, follow the directions given on site.</small>",
  p:"P.11, P.13, P.14"},
 
@@ -2357,22 +2503,22 @@ var Q = [
  c:["担任へ遅れて登校することを連絡する","そのまま校舎裏口へ向かう","事務局に電話する","何もしなくてよい"],a:0,
  ex:"遅刻する場合は<b>まず担任へ連絡</b>してください。そのうえで<b>正面玄関で生徒を学校当番へ引き渡し</b>ます（幼稚部は保護者が教室まで引率）。",
  q_e:"You overslept and your child will be <b>late</b>.\nWhat do you do first?",
- c_e:["Tell the homeroom teacher your child will arrive late","Just drive to the back entrance","Call the school office","Nothing needs to be done"],
+ c_e:["Tell the homeroom teacher your child will arrive late","Just drive to the back entrance as usual","Call the school office instead","Nothing needs to be done in advance"],
  ex_e:"If your child will be late, <b>contact the homeroom teacher first</b>. Then <b>hand your child over to the parent on duty at the main entrance</b> (for kindergarten, the parent walks the child to the classroom).",
  p:"P.15"},
 
 {ch:6,when:always,
  q:"<b>早退</b> させたい。持って行くものは？",
- c:["保護者ID（＋担任へ事前連絡）","健康保険証","早退届の用紙","とくに不要"],a:0,
+ c:["保護者ID（＋担任へ事前連絡）","健康保険証とお子さんの上着","早退届の用紙（記入して提出）","とくに何も要らない"],a:0,
  ex:"早退する場合は<b>担任へ連絡</b>し、<b>保護者IDをご持参</b>ください。",
  q_e:"You need to take your child out <b>early</b>. What do you bring?",
- c_e:["Your parent ID, and contact the homeroom teacher beforehand","Your health insurance card","An early-release form","Nothing in particular"],
+ c_e:["Your parent ID, and contact the homeroom teacher beforehand","Your health insurance card and your child's coat","An early-release form, filled in and signed","Nothing in particular is needed"],
  ex_e:"For early release, <b>contact the homeroom teacher</b> and <b>bring your parent ID</b>.",
  p:"P.15"},
 
 {ch:6,when:function(p){return p.kinder||p.intl||p.g14;},
  q:"<b>小学4年生以下</b> の早退。\n流れは？",
- c:["正面玄関でチェックイン後、教室へお迎えに行く","正面玄関外で待っていてもらう","駐車場で待っていてもらう","裏口で待っていてもらう"],a:0,
+ c:["正面玄関でチェックイン後、教室へお迎えに行く","正面玄関の外で立って待っていてもらう","駐車場の車のところで待っていてもらう","校舎裏口の前で待っていてもらう"],a:0,
  ex:"小学4年生以下は<b>正面玄関でチェックイン後、教室へお迎え</b>に行ってください。",
  q_e:"Early release for <b>grade 4 and below</b>.\nHow does it work?",
  c_e:["Check in at the main entrance, then go to the classroom","Have your child wait outside the main entrance","Have your child wait in the parking lot","Have your child wait at the back entrance"],
@@ -2381,10 +2527,10 @@ var Q = [
 
 {ch:6,when:function(p){return older(p);},
  q:"<b>小学5年生以上</b> の早退。\n生徒は どこで待つ？",
- c:["正面玄関外 または 駐車場","教室","カフェテリア","校舎裏口"],a:0,
+ c:["正面玄関外 または 駐車場","教室（担任と一緒に）","カフェテリア（席で待つ）","校舎裏口（B1F）の前"],a:0,
  ex:"小学5年生以上の場合、生徒は<b>正面玄関外または駐車場で待機</b>します。",
  q_e:"Early release for <b>grade 5 and up</b>.\nWhere does the student wait?",
- c_e:["Outside the main entrance, or in the parking lot","In the classroom","In the cafeteria","At the back entrance"],
+ c_e:["Outside the main entrance, or in the parking lot","In the classroom, together with the teacher","In the cafeteria, seated at a table","At the back entrance, down on B1"],
  ex_e:"For grade 5 and up, the student <b>waits outside the main entrance or in the parking lot</b>.",
  p:"P.15"},
 
@@ -2399,28 +2545,28 @@ var Q = [
 
 {ch:6,when:always,
  q:"構内で <b>接触事故</b> を起こした。\n最初にすることは？",
- c:["安全を確保する（けが人や車両を動かせない場合は911または警察へ）","すぐ車を移動させる","事務局に電話する","相手を待たずに帰る"],a:0,
+ c:["安全を確保する（けが人や車両を動かせない場合は911または警察へ）","すぐに車を安全な場所へ移動させて、そのまま列に戻る","まず学校事務局に電話をして、指示があるまで車で待つ","相手の運転手が戻って来るまで待たずに、そのまま帰る"],a:0,
  ex:"まず<b>安全を確保</b>してください。<b>けがをした人がいる場合や車両を安全に動かせない場合は911または警察へ連絡</b>します。そのうえで相手方と<b>氏名・連絡先・車両・保険情報</b>を交換してください。",
  q_e:"You are involved in a <b>minor collision</b> on campus.\nWhat comes first?",
- c_e:["Make the scene safe (call 911 or the police if anyone is hurt or a car cannot be moved)","Move your car right away","Call the school office","Leave without waiting for the other party"],
+ c_e:["Make the scene safe (call 911 or the police if anyone is hurt or a car cannot be moved)","Move your car out of the way right away and get back in the line","Call the school office first and wait for their instructions in the car","Leave without waiting for the other driver to come back to their car"],
  ex_e:"<b>Make the scene safe first.</b> <b>If anyone is injured, or a vehicle cannot be moved safely, call 911 or the police.</b> Then exchange <b>names, contact information, vehicle details, and insurance information</b> with the other party.",
  p:"P.16"},
 
 {ch:6,when:always,
  q:"駐車中の <b>無人の車</b> に接触してしまった。\n持ち主が見つからない。",
- c:["氏名・住所・連絡先・事故の状況を書いたメモを残す","そのまま帰る","学校にだけ伝える","名前だけ書いた紙を挟む"],a:0,
+ c:["氏名・住所・連絡先・事故の状況を書いたメモを残す","そのまま何も残さずに帰る","学校事務局にだけ伝えておく","自分の名前だけを書いた紙をワイパーに挟む"],a:0,
  ex:"不在車両に接触した場合は所有者を探し、見つからない場合は<b>氏名・住所・連絡先・事故の状況を記載したメモ</b>を残してください。",
  q_e:"You bumped a <b>parked, unattended car</b>\nand cannot find the owner.",
- c_e:["Leave a note with your name, address, contact information, and what happened","Just drive away","Only tell the school","Leave a note with just your name"],
+ c_e:["Leave a note with your name, address, contact information, and what happened","Just drive away without leaving anything on the other car","Only tell the school office about it, and leave nothing behind","Leave a note with just your name tucked under the wiper blade"],
  ex_e:"Look for the owner. If you cannot find them, leave a note with your <b>name, address, contact information, and a description of what happened</b>.",
  p:"P.16"},
 
 {ch:6,when:always,
  q:"事故のあと。<b>学校事務局</b> への連絡は？",
- c:["危機管理と再発防止のため報告が必要（ただし事故対応・保険手続きは学校では対応しない）","不要","保険会社が連絡してくれる","けが人がいなければ不要"],a:0,
+ c:["危機管理と再発防止のため報告が必要（ただし事故対応・保険手続きは学校では対応しない）","報告は不要。事故の対応は当事者どうしで解決すればよい問題だから","保険会社が学校に連絡してくれるので、こちらから報告しなくてよい","けが人がいなければ報告しなくてよい（軽い接触だった場合に限る）"],a:0,
  ex:"<b>危機管理および再発防止のため、学校事務局にもご報告をお願いします。</b>なお<b>事故対応や保険手続きについては学校では対応いたしかねます</b>ので、あらかじめご了承ください。報告は「同じ場所で次の事故を防ぐ」ためのものです。",
  q_e:"After an accident. What about telling the <b>school office</b>?",
- c_e:["Report it, for risk management and prevention (but the school does not handle claims or insurance)","No need","Your insurance company will tell them","Not needed if no one was hurt"],
+ c_e:["Report it, for risk management and prevention (but the school does not handle claims or insurance)","No need to report it at all; the two drivers can settle it between them","Your insurance company will tell the school for you, so there is no need","Not needed if no one was hurt and both cars can still be driven away safely"],
  ex_e:"<b>Please also report it to the school office, for risk management and to prevent it happening again.</b> Note that <b>the school cannot handle accident response or insurance procedures</b>. The report exists so the next accident in the same spot can be prevented.",
  p:"P.16"}
 ];
@@ -2440,10 +2586,10 @@ function bossQuestions(p) {
     p:"P.6",img:"in_kinder"});
   if (p.g14 || p.intl) out.push({
     q:"【最終問題】朝。<b>小1〜4年・国際部</b> のお子さんを送る。\n8:20に到着した。使える場所は？",
-    c:["駐車場、または 正面カフェテリア前・体育館前のドライブスルー","校舎裏口ドライブスルーのみ","第2駐車場","ファイアーレーンに一時停車"],a:0,
+    c:["駐車場、または 正面カフェテリア前・体育館前のドライブスルー","校舎裏口ドライブスルーのみ（B1F入口で降ろす）","第2駐車場に駐めて校舎入口まで送る","ファイアーレーンに一時停車して降ろす"],a:0,
     ex:"小1〜4年・国際部は<b>8:05〜8:35</b>。<b>駐車場利用</b>（校舎入口まで送り届ける）または<b>正面ドライブスルー（カフェテリア前・体育館前）</b>。",
     q_e:"[Final] Morning. Dropping off <b>grades 1-4 / International Dept.</b>\nYou arrive at 8:20. What may you use?",
-    c_e:["A parking lot, or the front drive-thru by the cafeteria or the gym","Back-entrance drive-thru only","Parking Lot 2","A quick stop in the fire lane"],
+    c_e:["A parking lot, or the front drive-thru by the cafeteria or the gym","Back-entrance drive-thru only, dropping off on B1","Parking Lot 2, then walk to the entrance","A quick stop in the fire lane to let them out"],
     ex_e:"Grades 1-4 and the International Dept.: <b>8:05-8:35</b>. Either <b>park</b> (and walk them to the entrance) or use the <b>front drive-thru (cafeteria or gym)</b>.",
     p:"P.7",img:"in_g14"});
   if (older(p)) out.push({
@@ -2455,68 +2601,101 @@ function bossQuestions(p) {
     ex_e:"Grade 5 and up: <b>8:15-8:35, back-entrance drive-thru</b>. Out on the sidewalk side.",
     p:"P.8",img:"in_g56"});
   if (mix(p)) out.push({
-    q:"【最終問題】朝。<b>小5以上と 小4以下</b> の\n両方を 一緒に送る。原則は？",
-    c:["駐車場に駐車し、保護者が校舎入口まで送り届ける","校舎裏口ドライブスルーでまとめて降ろす","正面ドライブスルーでまとめて降ろす","2回に分けて送る"],a:0,
-    ex:"<b>【原則】駐車場に駐車し、保護者が校舎入口まで送り届ける。</b>【例外】小5以上の兄姉が弟妹の階段昇降をサポートできる場合のみ裏口ドライブスルー可。幼稚部園児は兄姉がカフェテリアまで。",
-    q_e:"[Final] Morning. You bring <b>a grade 5+ child and a younger one</b>\ntogether. What is the general rule?",
-    c_e:["Park, and the parent walks them to the building entrance","Drop everyone at the back-entrance drive-thru","Drop everyone at the front drive-thru","Make two separate trips"],
-    ex_e:"<b>General rule: park, and the parent walks them to the entrance.</b> Exception: the back-entrance drive-thru is allowed only when the grade 5+ sibling can help the younger one on the stairs. A kindergartner is walked to the cafeteria by the older sibling.",
+    q:"【最終問題】朝。<b>小5以上と 小4以下</b> の\n両方を 一緒に送る。\n<b>兄姉が付き添えない日</b> の 原則は？",
+    c:["駐車場に駐車し、保護者が校舎入口まで送り届ける",
+       "校舎裏口ドライブスルーで まとめて降ろす",
+       "校舎正面ドライブスルーで まとめて降ろす",
+       "学年ごとに 2回に分けて 送る"],a:0,
+    ex:"<b>【原則】駐車場に駐車し、保護者が校舎入口まで送り届ける。</b>【例外】小5以上の兄姉が弟妹の階段昇降をサポートできる日のみ裏口ドライブスルー可。幼稚部園児は兄姉がカフェテリアまで。<b>兄姉が付き添えない日は原則に戻ります。</b>",
+    q_e:"[Final] Morning. You bring <b>a grade 5+ child and a younger one</b>\ntogether. What is the rule on a day the <b>older sibling cannot come along</b>?",
+    c_e:["Park, and the parent walks them to the building entrance",
+         "Drop all of them off at the back-entrance drive-thru",
+         "Drop all of them off at the front drive-thru",
+         "Make two separate trips, one per grade group"],
+    ex_e:"<b>General rule: park, and the parent walks them to the entrance.</b> Exception: the back-entrance drive-thru is allowed only on days the grade 5+ sibling can help the younger one on the stairs. A kindergartner is walked to the cafeteria by the older sibling. <b>On days the older sibling cannot come along, you are back on the general rule.</b>",
     p:"P.9",img:"in_g14"});
-  if (p.kinder || p.intl) out.push({
-    q:"【最終問題】お昼。<b>" + (p.kinder && p.intl ? "幼稚部と国際部" : (p.kinder ? "幼稚部" : "国際部")) +
-      "</b> の\nピックアップ。時刻と方法は？",
-    c:[(p.kinder && p.intl ? "12:30に幼稚部、12:35に国際部。駐車場利用で教室までお迎え"
-        : (p.kinder ? "12:30／駐車場利用で教室までお迎え" : "12:35／駐車場利用で教室までお迎え")),
-       "15:10／正面ドライブスルー","12:30／校舎裏口ドライブスルー","15:20／校舎裏口ドライブスルー"],a:0,
-    ex:"幼稚部<b>12:30</b>／国際部<b>12:35</b>。<b>駐車場利用</b>で保護者が教室までお迎え。" +
-      (p.kinder && p.intl ? "幼稚部と国際部に在籍する兄弟姉妹がいる場合は<b>先に幼稚部</b>。" : "") +
-      "混雑緩和のため出来る限り<b>第3駐車場</b>。",
-    q_e:"[Final] Midday pickup for <b>" + (p.kinder && p.intl ? "kindergarten and the International Dept."
-        : (p.kinder ? "kindergarten" : "the International Dept.")) + "</b>.\nWhat time, and how?",
-    c_e:[(p.kinder && p.intl ? "Kindergarten at 12:30, International at 12:35 — park and walk to the classroom"
-        : (p.kinder ? "12:30 — park and walk to the classroom" : "12:35 — park and walk to the classroom")),
-       "15:10 — front drive-thru","12:30 — back-entrance drive-thru","15:20 — back-entrance drive-thru"],
-    ex_e:"Kindergarten <b>12:30</b>, International Dept. <b>12:35</b>. <b>Park</b> and walk to the classroom. " +
-      (p.kinder && p.intl ? "With siblings in kindergarten and the International Dept., collect <b>kindergarten first</b>. " : "") +
-      "Use <b>Lot 3</b> when you can, to ease congestion.",
-    p:"P.11",img:"lots"});
+  if (p.kinder || p.intl) {
+    /* ★誤答は正解と同じ粒度・同じ長さに寄せる（文字数で正解が透けないように）。
+       幼稚部と国際部の両方に在籍している家庭は正解が長くなるので、誤答にも
+       「2人まとめて」まで書いて並べる。 */
+    var both = p.kinder && p.intl;
+    var sfx = both ? "で2人まとめて乗車" : "で乗車";
+    var sfxE = both ? ", picking up both children together" : ", loading at the curb";
+    out.push({
+      q:"【最終問題】お昼。<b>" + (both ? "幼稚部と国際部" : (p.kinder ? "幼稚部" : "国際部")) +
+        "</b> の\nピックアップ。時刻と方法は？",
+      c:[(both ? "12:30に幼稚部、12:35に国際部。駐車場利用で教室までお迎え"
+          : (p.kinder ? "12:30／駐車場利用で教室までお迎え" : "12:35／駐車場利用で教室までお迎え")),
+         "15:10／正面ドライブスルー" + sfx,
+         "12:30／校舎裏口ドライブスルー" + sfx,
+         "15:20／校舎裏口ドライブスルー" + sfx],a:0,
+      ex:"幼稚部<b>12:30</b>／国際部<b>12:35</b>。<b>駐車場利用</b>で保護者が教室までお迎え。" +
+        (both ? "幼稚部と国際部に在籍する兄弟姉妹がいる場合は<b>先に幼稚部</b>。" : "") +
+        "混雑緩和のため出来る限り<b>第3駐車場</b>。",
+      q_e:"[Final] Midday pickup for <b>" + (both ? "kindergarten and the International Dept."
+          : (p.kinder ? "kindergarten" : "the International Dept.")) + "</b>.\nWhat time, and how?",
+      c_e:[(both ? "Kindergarten at 12:30, International at 12:35 — park and walk to the classroom"
+          : (p.kinder ? "12:30 — park and walk to the classroom" : "12:35 — park and walk to the classroom")),
+         "15:10 — front drive-thru" + sfxE,
+         "12:30 — back-entrance drive-thru" + sfxE,
+         "15:20 — back-entrance drive-thru" + sfxE],
+      ex_e:"Kindergarten <b>12:30</b>, International Dept. <b>12:35</b>. <b>Park</b> and walk to the classroom. " +
+        (both ? "With siblings in kindergarten and the International Dept., collect <b>kindergarten first</b>. " : "") +
+        "Use <b>Lot 3</b> when you can, to ease congestion.",
+      p:"P.11",img:"lots"});
+  }
   if (p.g14) out.push({
     q:"【最終問題】午後。<b>小1〜4年生</b> の\nピックアップ。時刻と方法は？",
-    c:["15:10〜15:30／駐車場利用（教室までお迎え）。正面ドライブスルーは計2名でお迎えに来た場合","15:20〜／校舎裏口ドライブスルー","12:30／駐車場利用","15:10〜／校舎裏口ドライブスルー"],a:0,
-    ex:"小1〜4年生は<b>15:10〜15:30</b>。<b>駐車場利用</b>（教室までお迎え）が基本です。<b>校舎正面ドライブスルー</b>を使えるのは<b>ドライバー1名＋教室まで行く方1名の計2名でお迎えに来た場合</b>（運営委員会からの追記）。運転手は車から離れず、前が空いたら速やかに前進。",
+    c:["15:10〜15:30／駐車場利用（教室までお迎え）。正面ドライブスルーは計2名でお迎えに来た場合のみ",
+       "15:20〜15:30／校舎裏口ドライブスルー（カードを掲示して 待ちます）",
+       "12:30〜12:35／駐車場利用（教室までお迎えに 行きます）",
+       "15:10〜15:30／校舎裏口ドライブスルー（カードを掲示して 待ちます）"],a:0,
+    ex:"小1〜4年生は<b>15:10〜15:30</b>。<b>駐車場利用</b>（教室までお迎え）が基本です。<b>校舎正面ドライブスルー</b>を使えるのは<b>ドライバー1名＋教室まで行く方1名の計2名でお迎えに来た場合のみ</b>（8月13日更新）。運転手は車から離れず、前が空いたら速やかに前進。",
     q_e:"[Final] Afternoon pickup for <b>grades 1-4</b>.\nWhat time, and how?",
-    c_e:["15:10-15:30 — park and walk to the classroom; front drive-thru only if two adults come","From 15:20 — back-entrance drive-thru","12:30 — park and walk","From 15:10 — back-entrance drive-thru"],
-    ex_e:"Grades 1-4: <b>15:10-15:30</b>. The standard way is to <b>park and walk to the classroom</b>. The <b>front drive-thru</b> is allowed only when <b>two adults come — one driver plus one person who walks to the classroom</b> (added by the operating committee). The driver stays with the car and pulls forward promptly.",
-    p:"P.12（運営委員会 追記）",img:"out_g14"});
+    c_e:["15:10-15:30 — park and walk to the classroom; front drive-thru only if two adults come",
+         "15:20-15:30 — back-entrance drive-thru, waiting with your card displayed",
+         "12:30-12:35 — park in a lot and walk to the classroom to collect them",
+         "15:10-15:30 — back-entrance drive-thru, waiting with your card displayed"],
+    ex_e:"Grades 1-4: <b>15:10-15:30</b>. The standard way is to <b>park and walk to the classroom</b>. The <b>front drive-thru</b> is allowed <b>only when two adults come — one driver plus one person who walks to the classroom</b> (updated August 13). The driver stays with the car and pulls forward promptly.",
+    p:"P.12",img:"out_g14"});
   if (older(p)) {
     var t = uraStart(p), lab = uraLabel(p), labE = uraLabelE(p), i, wrongT = [];
     var all = ["15:10","15:15","15:20"];
-    for (i = 0; i < all.length; i++) if (all[i] !== t) wrongT.push(all[i] + "〜");
+    /* ★誤答も「〜（15:30までに完了）」まで書いて、正解だけが長くならないようにする。 */
+    for (i = 0; i < all.length; i++) if (all[i] !== t) wrongT.push(all[i] + "〜（15:30までに完了）");
     out.push({
       q:"【最終問題】午後。わが家は「<b>" + lab + "</b>」。\n校舎裏口ドライブスルーの 開始時刻は？",
-      c:[t + "〜（15:30までに完了）"].concat(wrongT).concat(["15:30〜"]),a:0,
+      c:[t + "〜（15:30までに完了）"].concat(wrongT).concat(["15:30〜（15:40までに完了）"]),a:0,
       ex:"開始時刻は<b>" + t + "〜</b>。<b>15:30までに完了</b>してください。<b>ピックアップカードをフロントガラスに掲示</b>し、歩道側で乗車。" +
         (pmMix(p) ? "" : "<br><small>※午後の「弟妹」は小1〜4年生を指します。幼稚部・国際部は12:30／12:35に別便で帰宅しているため、午後は「弟妹なし」です。</small>"),
       q_e:"[Final] Afternoon. Your family is \"<b>" + labE + "</b>\".\nWhen does the back-entrance drive-thru start for you?",
-      c_e:[t + " (finish by 15:30)"].concat(wrongT.map(function (s) { return s.replace("〜", ""); })).concat(["15:30"]),
+      c_e:[t + " (finish by 15:30)"].concat(wrongT.map(function (s) {
+        return s.slice(0, 5) + " (finish by 15:30)";
+      })).concat(["15:30 (finish by 15:40)"]),
       ex_e:"You start at <b>" + t + "</b> and must <b>finish by 15:30</b>. <b>Display your pickup card on the windshield</b>, and load on the sidewalk side." +
         (pmMix(p) ? "" : "<br><small>Note: \"younger sibling\" in the afternoon means grades 1-4. Kindergarten and the International Dept. go home at 12:30 / 12:35 on a separate trip, so your family counts as \"no younger sibling\".</small>"),
       p:"P.13, P.14"});
     out.push({
       q:"【最終問題】裏口の列に並ぶ前に、\n必ず用意しておくものは？",
-      c:["ピックアップカード（白い紙にクラスと名前・全員分）","保護者IDだけ","現金","なにもいらない"],a:0,
+      c:["ピックアップカード（白い紙にクラスと名前・全員分）","保護者IDだけ（首から下げて提示すればよい）","現金（駐車料金として）","なにもいらない（名前を伝えるだけ）"],a:0,
       ex:"<b>ピックアップカード</b>は必須です。白い紙に<b>クラスと名前</b>を、車の外から教員が見えるサイズで、<b>ピックアップする生徒全員分</b>記載し、フロントガラスに掲示。ない場合は<b>15:20以降のピックアップとなり列から一旦退出</b>していただくことがあります。",
       q_e:"[Final] Before you join the back-entrance line,\nwhat must you have ready?",
-      c_e:["Your pickup card — white paper, class and name, every student listed","Just your parent ID","Cash","Nothing"],
+      c_e:["Your pickup card — white paper, class and name, every student listed","Just your parent ID, worn around your neck","Cash, for the parking fee","Nothing — you just tell them the name at the window"],
       ex_e:"The <b>pickup card</b> is required. On white paper, write the <b>class and name</b> of <b>every student you are collecting</b>, big enough to read from outside the car, and display it on the windshield. Without it you may be asked to <b>leave the line and pick up after 15:20</b>.",
       p:"P.13, P.18",img:"card"});
   }
   if (pmMix(p)) out.push({
-    q:"【最終問題】午後。<b>小5以上と 小1〜4年</b> の\n両方を 迎える。原則と例外は？",
-    c:["原則＝保護者が各教室へ／例外＝兄姉が迎えに行けるなら15:20〜裏口（B1Fで待機）","原則＝裏口でまとめて／例外＝駐車場","原則＝正面でまとめて／例外なし","どちらでも自由に選べる"],a:0,
+    q:"【最終問題】午後。<b>小5以上と 小1〜4年</b> の\n両方を 迎える。\n原則（兄姉が迎えに行けない日）と 例外は？",
+    c:["原則＝保護者が各教室へ／例外＝兄姉が迎えに行ける日は15:20〜裏口（B1Fで待機）",
+       "原則＝裏口でまとめて受け取る／例外＝駐車場に駐車して各教室へ",
+       "原則＝正面でまとめて受け取る／例外はとくに 定められていない",
+       "その日の都合で どちらでも 自由に選んでよい"],a:0,
     ex:"<b>【原則】保護者が各生徒の教室まで迎えに行く。【例外】小5以上の兄・姉が弟妹を迎えに行けるなら校舎裏口ドライブスルー（15:20〜）。兄姉が弟妹を教室まで迎えに行き、B1F裏口で待機。</b>",
-    q_e:"[Final] Afternoon. You are collecting <b>a grade 5+ child and one in grades 1-4</b>.\nWhat are the rule and the exception?",
-    c_e:["Rule: the parent goes to each classroom. Exception: if the older sibling can collect the younger one, back entrance from 15:20, waiting on B1","Rule: everyone at the back entrance. Exception: the parking lot","Rule: everyone at the front. No exception","You may freely choose either"],
+    q_e:"[Final] Afternoon. You are collecting <b>a grade 5+ child and one in grades 1-4</b>.\nWhat are the rule (for days the older sibling cannot collect them) and the exception?",
+    c_e:["Rule: the parent goes to each classroom. Exception: on days the older sibling can collect the younger one, back entrance from 15:20, waiting on B1",
+         "Rule: collect them together at the back entrance. Exception: park in a lot and go to each classroom yourself",
+         "Rule: collect them together at the front. No exception is written anywhere",
+         "You may freely choose either one, depending on the day"],
     ex_e:"<b>General rule: the parent goes to each child's classroom. Exception: if the grade 5+ sibling can collect the younger child, use the back-entrance drive-thru from 15:20 — the older sibling brings the younger one from the classroom and they wait at the B1 back entrance.</b>",
     p:"P.14",img:"out_g56"});
   /* 共通のトドメ */
@@ -2525,7 +2704,7 @@ function bossQuestions(p) {
     c:["保護者IDを首から下げて提示","予約メール","身分証明書はなんでもよい","なにも必要ない"],a:0,
     ex:"<b>保護者IDを首から下げて警察官に提示</b>して入館します。IDは初日（始業日）に長子のクラスで配付されます。",
     q_e:"[Final] The Demon Lord groans.\n\"What does a parent need to enter the building...?\"",
-    c_e:["A parent ID, worn around the neck and shown at the door","A reservation email","Any photo ID will do","Nothing at all"],
+    c_e:["A parent ID, worn around the neck and shown at the door","A reservation email from the school office","Any photo ID will do at the door","Nothing at all is required"],
     ex_e:"<b>Wear your parent ID around your neck and show it to the police officer</b> to enter. IDs are handed out on the first day in your oldest child's classroom.",
     p:"P.3, P.17"});
   out.push({
@@ -2560,7 +2739,10 @@ var CHAPTERS = [
   sub:"学年ごとの時間とルート。", sub_e:"Times and routes by grade."},
  {n:4,gem:"white", gname:"白の秘石", gname_e:"White Gem",
   name:"帰りの下校坂", name_e:"Hill of Afternoon Pickup",
-  foe:"まちあわせドラコン", foe_e:"Rendezvous Dracon", art:"pw", bg:"after",
+  /* ★双頭竜（まちあわせドラコン）は第5章のふたごりゅうと同じ「竜」で
+     見分けがつかなかったため、初版の「ピックアップ・レイス」を
+     クラゲに描き直して差し替えた（依頼者の指示）。 */
+  foe:"まちあわせクラゲ", foe_e:"Rendezvous Jellyfish", art:"pw", bg:"after",
   sub:"時刻とピックアップカード。", sub_e:"Times and the pickup card."},
  {n:5,gem:"black", gname:"黒の秘石", gname_e:"Black Gem",
   name:"兄弟姉妹の迷宮", name_e:"Labyrinth of Siblings",
@@ -2594,6 +2776,8 @@ var CODEX = [
    "Getting in and out","Children always get in and out on the sidewalk side."],
   ["右折禁止","構内に右折禁止箇所あり（配布資料P.3の図を確認）。","P.3",
    "No-right-turn spots","There are no-right-turn spots on campus (see the figure on P.3 of the handout)."],
+  ["校舎南側の出入口<br>【2026.08.13 追記】","校舎南側（信号のある出入口）は入口専用として運用。横断歩道の安全確保と駐車場内の円滑な車両通行のため、ここからは出庫しない。ただし警察官または警備員の誘導がある場合はその指示に従う。","P.17",
+   "The south-side opening<br>[Added August 13, 2026]","The south side of the building (the opening with the traffic light) is operated as an entrance only — do not exit through it. This keeps the crosswalk safe and traffic moving inside the lots. If a police officer or security guard directs you, follow their instructions."],
   ["ルート","学年に応じた指定の送迎ルートを通行。","P.3, P.5, P.10",
    "Routes","Use the route assigned to your child's grade."],
   ["合流地点","1台ずつ交互に進入。","P.3",
@@ -2626,12 +2810,18 @@ var CODEX = [
   ["兄弟姉妹｜長子が小1〜4・国際部＋幼稚部の弟妹","駐車場に駐車し保護者が校舎入口まで送る、または校舎正面ドライブスルー。幼稚部園児はカフェテリアで登園時間まで待機。","P.9",
    "Siblings | oldest in grades 1-4 or International, younger in kindergarten","Park and walk them to the entrance, or use the front drive-thru. The kindergartner waits in the cafeteria until arrival time.",
    function (p) { return !!(p.kinder && (p.g14 || p.intl)); }],
-  ["兄弟姉妹｜長子が小5以上＋弟妹（原則）","駐車場に駐車し、保護者が校舎入口まで送り届ける。幼稚部園児はカフェテリアで待機。","P.9",
-   "Siblings | oldest in grade 5+ with a younger sibling (rule)","Park, and the parent walks them to the building entrance. A kindergartner waits in the cafeteria.",
+  ["兄弟姉妹｜長子が小5以上＋弟妹<br>【原則】兄姉が付き添えない日","駐車場に駐車し、保護者が校舎入口まで送り届ける。幼稚部園児はカフェテリアで待機。","P.9",
+   "Siblings | oldest in grade 5+ with a younger sibling<br>[Rule] days the older sibling cannot come along","Park, and the parent walks them to the building entrance. A kindergartner waits in the cafeteria.",
    function (p) { return mix(p); }],
-  ["兄弟姉妹｜長子が小5以上＋弟妹（例外）","小5以上の兄姉が弟妹の階段昇降をサポートできる場合は校舎裏口ドライブスルーを利用可。幼稚部園児がいる場合は兄姉がカフェテリアまで送り届ける。","P.9",
-   "Siblings | oldest in grade 5+ with a younger sibling (exception)","If the older sibling can help the younger one on the stairs, you may use the back-entrance drive-thru. If a kindergartner is along, the older sibling walks them to the cafeteria.",
-   function (p) { return mix(p); }]]},
+  ["兄弟姉妹｜長子が小5以上＋弟妹<br>【例外】兄姉が付き添える日","小5以上の兄姉が弟妹の階段昇降をサポートできる場合は校舎裏口ドライブスルーを利用可。幼稚部園児がいる場合は兄姉がカフェテリアまで送り届ける。付き添えない日は【原則】に戻る。","P.9",
+   "Siblings | oldest in grade 5+ with a younger sibling<br>[Exception] days the older sibling can come along","If the older sibling can help the younger one on the stairs, you may use the back-entrance drive-thru. If a kindergartner is along, the older sibling walks them to the cafeteria. On other days you are back on the rule above.",
+   function (p) { return mix(p); }],
+  ["兄弟姉妹｜国際部＋小1〜4年","この2人はどちらも8:05〜8:35で方式も同じ（駐車場利用または校舎正面ドライブスルー）なので、朝は同じ便でまとめられる。下校は12:35と15:10〜15:30で別。","P.7, P.11, P.12",
+   "Siblings | International Dept. + grades 1-4","These two are both 8:05-8:35 with the same options (park, or the front drive-thru), so one morning trip covers them. Pickup splits: 12:35 and 15:10-15:30.",
+   function (p) { return !!(p.intl && p.g14); }],
+  ["兄弟姉妹｜小5・6年＋中高","登校は小学5年生以上でひとまとめ。どちらも8:15〜8:35・校舎裏口ドライブスルーなので同じ便でまとめられる。","P.8",
+   "Siblings | grades 5-6 + Jr. High/High School","Drop-off treats grade 5 and up as one group: both are 8:15-8:35 at the back-entrance drive-thru, so one trip covers them.",
+   function (p) { return !!(p.g56 && p.jh); }]]},
  {t:"下校",t_e:"Pickup",fig:["out_lot3","out_lot1","out_g14","out_g56"],r:[
   ["幼稚部","12:30／駐車場利用・保護者が教室までお迎え。","P.11",
    "Kindergarten","12:30 / park, and the parent walks to the classroom.",
@@ -2642,8 +2832,8 @@ var CODEX = [
   ["小1〜4年","15:10〜15:30／駐車場利用（教室までお迎え）または校舎正面ドライブスルー（体育館前・カフェテリア前）。","P.12",
    "Grades 1-4","15:10-15:30 / park and walk to the classroom, or use the front drive-thru (by the gym or the cafeteria).",
    function (p) { return !!p.g14; }],
-  ["小1〜4年の正面ドライブスルーの条件<br>【運営委員会からの追記】","小1〜4年生は教室までお迎えに行くのが前提。校舎正面ドライブスルーを利用できるのは、ドライバー1名・教室まで行く方1名の計2名でお迎えに来た場合。お子さんだけをドライブスルーで待ち合わせることはできません。","P.12（運営委員会 追記）",
-   "Condition on the front drive-thru for grades 1-4<br>[Added by the operating committee]","Walking to the classroom is the default for grades 1-4. You may use the front drive-thru only when two adults come: one driver plus one person who walks to the classroom. A child may not simply meet you at the drive-thru alone.",
+  ["小1〜4年の正面ドライブスルーの条件<br>【2026.08.13 更新】","小1〜4年生は教室までお迎えに行くのが前提。校舎正面ドライブスルーを利用できるのは、ドライバー1名・教室まで行く方1名の計2名でお迎えに来た場合のみ。運転手は車に残り、もう1名が教室まで迎えに行く。お子さんだけをドライブスルーで待ち合わせることはできません。","P.12",
+   "Condition on the front drive-thru for grades 1-4<br>[Updated August 13, 2026]","Walking to the classroom is the default for grades 1-4. You may use the front drive-thru only when two adults come: one driver plus one person who walks to the classroom. The driver stays with the car. A child may not simply meet you at the drive-thru alone.",
    function (p) { return !!p.g14; }],
   ["小5年生以上","校舎裏口ドライブスルー。中高（弟妹なし）15:10〜／小5・6（弟妹なし）15:15〜／小5〜中高（弟妹あり）15:20〜。15:30までに完了。","P.13",
    "Grade 5 and up","Back-entrance drive-thru. Jr. High/High with no younger sibling from 15:10; grades 5-6 with no younger sibling from 15:15; grades 5-12 with a younger sibling from 15:20. Finish by 15:30.",
@@ -2654,12 +2844,18 @@ var CODEX = [
   ["ピックアップカード","裏口ドライブスルーで必須。白い紙にクラスと名前を、車の外から教員が見えるサイズで、対象生徒全員分記載しフロントガラスに掲示。ない場合は15:20以降のピックアップとなり列から一旦退出していただくことがある。","P.13, P.17, P.18",
    "Pickup card","Required for the back-entrance drive-thru. On white paper, write the class and name of every student you are collecting, large enough to read from outside the car, and display it on the windshield. Without it you may be asked to leave the line and pick up after 15:20.",
    function (p) { return older(p); }],
-  ["兄弟姉妹｜長子が小5以上＋小1〜4の弟妹（原則）","保護者が各生徒の教室まで迎えに行く。","P.14",
-   "Siblings | oldest in grade 5+ with a sibling in grades 1-4 (rule)","The parent goes to each child's classroom.",
+  ["兄弟姉妹｜長子が小5以上＋小1〜4の弟妹<br>【原則】兄姉が迎えに行けない日","保護者が各生徒の教室まで迎えに行く。","P.14",
+   "Siblings | oldest in grade 5+ with a sibling in grades 1-4<br>[Rule] days the older sibling cannot collect them","The parent goes to each child's classroom.",
    function (p) { return pmMix(p); }],
-  ["兄弟姉妹｜同（例外）","小5以上の兄姉が弟妹を迎えに行けるなら校舎裏口ドライブスルー（15:20〜）。兄姉が弟妹を教室まで迎えに行き、地下1階（B1F）裏口で待機。","P.14",
-   "Siblings | same case (exception)","If the older sibling can collect the younger one, use the back-entrance drive-thru from 15:20. The older sibling brings them from the classroom and they wait at the B1 back entrance.",
+  ["兄弟姉妹｜同<br>【例外】兄姉が迎えに行ける日","小5以上の兄姉が弟妹を迎えに行けるなら校舎裏口ドライブスルー（15:20〜）。兄姉が弟妹を教室まで迎えに行き、地下1階（B1F）裏口で待機。迎えに行けない日は【原則】に戻る。","P.14",
+   "Siblings | same case<br>[Exception] days the older sibling can collect them","If the older sibling can collect the younger one, use the back-entrance drive-thru from 15:20. The older sibling brings them from the classroom and they wait at the B1 back entrance. On other days you are back on the rule above.",
    function (p) { return pmMix(p); }],
+  ["兄弟姉妹｜国際部＋小1〜4年","下校は国際部12:35／小1〜4年15:10〜15:30で時間帯が別。午後は2回のお迎えになる。「先に幼稚部→その後 国際部」の順番ルールは幼稚部と国際部の組み合わせに限った規定なので、この2人には当てはまらない。","P.11, P.12",
+   "Siblings | International Dept. + grades 1-4","Pickup is 12:35 for the International Dept. and 15:10-15:30 for grades 1-4 — separate windows, so the afternoon takes two trips. The \"kindergarten first, then International Dept.\" ordering rule is only for that pair and does not apply here.",
+   function (p) { return !!(p.intl && p.g14); }],
+  ["兄弟姉妹｜小5・6年＋中高","裏口ドライブスルーの開始時刻は、小5・6年を含むご家庭は15:15〜（中高だけなら15:10〜）。15:30までに完了。2回に分ける必要はない。","P.13",
+   "Siblings | grades 5-6 + Jr. High/High School","At the back-entrance drive-thru, a family that includes grades 5-6 starts at 15:15 (Jr. High/High School alone would be 15:10). Finish by 15:30. You do not need two trips.",
+   function (p) { return !!(p.g56 && p.jh); }],
   ["なぜ小5以上が裏口？","①駐車場の混雑緩和　②裏口が地下1階・低学年の教室は1階のため、低学年は大きな荷物を持った階段の昇り降りが必要になるため。","P.17",
    "Why grade 5 and up use the back entrance","(1) It eases congestion in the lots. (2) The back entrance is on B1 and the younger grades' classrooms are on floor 1, so younger children would be carrying heavy bags up and down stairs.",
    function (p) { return older(p); }]]},
@@ -2726,10 +2922,10 @@ var OPTS = [
    n_e:"Limited mobility, or bringing an infant/toddler",
    s:"第1駐車場（優先駐車場）の対象になります（P.4）",
    s_e:"Makes you eligible for Lot 1, the priority lot (P.4)"},
-  {k:"siblingSupport", n:"小5以上の兄姉が 弟妹に付き添える",
-   n_e:"A grade 5+ sibling can accompany the younger one",
-   s:"兄弟姉妹の【例外】ルートの判定に使います（P.9・P.14）",
-   s_e:"Used to decide the sibling exception routes (P.9, P.14)"}
+  {k:"siblingSupport", n:"小5以上の兄姉が 弟妹に付き添える日がある",
+   n_e:"Some days, a grade 5+ sibling can go along with the younger one",
+   s:"【例外】ルート（裏口ドライブスルー）が使えるかの判定に使います。付き添えない日は【原則】ルートです（P.9・P.14）",
+   s_e:"Decides whether the exception route (the back-entrance drive-thru) is open to you. On days they cannot, you follow the standard route (P.9, P.14)"}
 ];
 
 /* ===== 04_ui.js ===== */
@@ -2962,11 +3158,14 @@ function buildMap() {
     })(L2[i]);
   }
 
-  /* 魔王城は秘石が全部そろってから */
+  /* 魔王城は秘石が全部そろってから。
+     ★秘石がそろうまで魔王は真っ黒＋「？」で、名前も出さない（依頼者の指定）。
+       そろった瞬間に姿と名前があらわれるので、6つ集める意味が画面に出る。 */
   var bossOpen = allChaptersCleared();
   var bb = el("button", "chap boss" + (ST.cleared[BOSS.n] ? " done" : "") + (bossOpen ? "" : " locked"),
-    '<span class="mo">' + mon(BOSS.art) + '</span>' +
-    '<span class="tx"><b>' + chName(BOSS) + "</b><small>" + chFoe(BOSS) + L("／", " / ") + chSub(BOSS) + "</small></span>" +
+    '<span class="mo">' + (bossOpen ? mon(BOSS.art) : bossVeil()) + '</span>' +
+    '<span class="tx"><b>' + chName(BOSS) + "</b><small>" +
+    (bossOpen ? chFoe(BOSS) : L("？？？", "???")) + L("／", " / ") + chSub(BOSS) + "</small></span>" +
     '<span class="st">' + (ST.cleared[BOSS.n] ? L("たおした<br>★", "Cleared<br>★")
       : (bossOpen ? L("決戦<br>▶", "Fight<br>▶") : L("封印<br>？", "Sealed<br>?"))) + "</span>");
   bb.onclick = function () {
@@ -2994,8 +3193,8 @@ function buildMap() {
     host.appendChild(cb);
   }
   var note = el("div", "xs dim",
-    L("※このゲームは学習用です。正式なルールは『JSD登下校運用（2026.08）』が優先します。",
-      "This game is a study aid. The official JSD Drop-off & Pickup Rules (Aug 2026) always take precedence."));
+    L("※このゲームは学習用です。正式なルールは『JSD登下校運用（2026.08.13）』が優先します。",
+      "This game is a study aid. The official JSD Drop-off & Pickup Rules (Aug 13, 2026) always take precedence."));
   note.style.padding = "4px 2px 0";
   host.appendChild(note);
 
@@ -3096,11 +3295,11 @@ function buildCodex() {
   }
   html += '<div class="rule" style="border-color:#4a3a10;background:rgba(50,38,8,.5)">' +
     L("<b>この画面について</b>ここに載せているのは配布資料の要点です。" +
-      "<b>正式なルールは『JSD登下校運用（2026.08）』が優先します。</b>" +
+      "<b>正式なルールは『JSD登下校運用（2026.08.13）』が優先します。</b>" +
       "図は配布資料からの引用です。電話番号は収録していません——" +
       "<b>連絡先は配布資料P.15をご確認ください。</b>",
       "<b>About this screen</b> These are the key points of the handout. " +
-      "<b>The official JSD Drop-off &amp; Pickup Rules (Aug 2026) always take precedence.</b> " +
+      "<b>The official JSD Drop-off &amp; Pickup Rules (Aug 13, 2026) always take precedence.</b> " +
       "Figures are quoted from the handout. Phone numbers are deliberately not included — " +
       "<b>please see P.15 of the handout for contact information.</b>") + "</div>";
   $("codexBody").innerHTML = html;
@@ -3487,8 +3686,8 @@ function showEx(ok, q) {
   /* .ex-in で包むのは必須（CSS のコメント参照）。包まないと文中の強調が全部改行される。 */
   $("exBody").innerHTML = '<div class="ex-in">' +
     L("<b>こたえ：</b>", "<b>Answer: </b>") + qChoices(q)[q.a] + "<br>" + qEx(q) + "</div>";
-  $("exSrc").innerHTML = L("▸ 出典：<b>" + q.p + "</b>　（正式なルールは『JSD登下校運用（2026.08）』が優先します）",
-    "▸ Source: <b>" + pgText(q.p) + "</b> (the official JSD Drop-off &amp; Pickup Rules (Aug 2026) always take precedence)");
+  $("exSrc").innerHTML = L("▸ 出典：<b>" + q.p + "</b>　（正式なルールは『JSD登下校運用（2026.08.13）』が優先します）",
+    "▸ Source: <b>" + pgText(q.p) + "</b> (the official JSD Drop-off &amp; Pickup Rules (Aug 13, 2026) always take precedence)");
 
   var fig = $("exFig"), cap = $("exCap"), im = q.img ? IMG[q.img] : null;
   fig.innerHTML = "";
@@ -3665,10 +3864,10 @@ function buildCard() {
   if (mix(P)) {
     if (P.siblingSupport) {
       rowsIn.push(["8:15–8:35", L(
-        "<em>校舎裏口ドライブスルー</em>（例外ルート）" +
-        "<small>小5以上の兄姉が弟妹の階段昇降をサポートできる場合。裏口はB1Fです。</small>",
-        "<em>Back-entrance drive-thru</em> (the exception route)" +
-        "<small>Only when the grade 5+ sibling can help the younger one on the stairs. The back entrance is on B1.</small>")]);
+        "<em>校舎裏口ドライブスルー</em>【例外＝兄姉が付き添える日】" +
+        "<small>小5以上の兄姉が弟妹の階段昇降をサポートできる日だけ。裏口はB1Fです。</small>",
+        "<em>Back-entrance drive-thru</em> [exception: days the older sibling goes along]" +
+        "<small>Only on days the grade 5+ sibling can help the younger one on the stairs. The back entrance is on B1.</small>")]);
       if (P.kinder) rowsIn.push([L("〜8:40", "by 8:40"), L(
         "幼稚部の弟妹は<em>兄姉がカフェテリアまで</em>送り届け、登園時間まで待機",
         "The <em>older sibling walks the kindergartner to the cafeteria</em>, where they wait until arrival time")]);
@@ -3676,8 +3875,8 @@ function buildCard() {
         "On days the older sibling cannot come along, go back to the standard route: park, and a parent walks them to the entrance (P.9)"));
     } else {
       rowsIn.push(["8:15–8:35", L(
-        "<em>駐車場に駐車</em>し、保護者が<em>校舎入口まで</em>送り届ける（原則）",
-        "<em>Park</em>, and a parent walks them <em>to the building entrance</em> (the standard route)")]);
+        "<em>駐車場に駐車</em>し、保護者が<em>校舎入口まで</em>送り届ける【原則＝兄姉が付き添えない日】",
+        "<em>Park</em>, and a parent walks them <em>to the building entrance</em> [standard: days the older sibling does not go along]")]);
       if (P.kinder) rowsIn.push([L("〜8:40", "by 8:40"), L(
         "幼稚部の弟妹は<em>カフェテリアで登園時間まで待機</em>",
         "The kindergartner <em>waits in the cafeteria until arrival time</em>")]);
@@ -3720,24 +3919,24 @@ function buildCard() {
     /* 小5以上 ＋ 小1〜4年（P.14） */
     if (P.siblingSupport) {
       rowsOut.push(["15:20–15:30", L(
-        "<em>校舎裏口ドライブスルー</em>（例外ルート）" +
+        "<em>校舎裏口ドライブスルー</em>【例外＝兄姉が迎えに行ける日】" +
         "<small>兄姉が弟妹を教室まで迎えに行き、<b>B1F裏口で待機</b>。ピックアップカード必須。</small>",
-        "<em>Back-entrance drive-thru</em> (the exception route)" +
+        "<em>Back-entrance drive-thru</em> [exception: days the older sibling can collect them]" +
         "<small>The older sibling collects the younger one from the classroom and they <b>wait at the B1 back entrance</b>. Pickup card required.</small>")]);
       chk.push(L("兄姉が迎えに行けない日は、原則どおり保護者が各教室へ（小1〜4年は15:10〜15:30）（P.14）",
         "On days the older sibling cannot collect them, follow the standard route: a parent goes to each classroom (grades 1-4, 15:10-15:30) (P.14)"));
     } else {
       rowsOut.push(["15:10–15:30", L(
-        "<em>保護者が各生徒の教室まで</em>迎えに行く（原則）",
-        "<em>A parent goes to each child's classroom</em> (the standard route)")]);
+        "<em>保護者が各生徒の教室まで</em>迎えに行く【原則＝兄姉が迎えに行けない日】",
+        "<em>A parent goes to each child's classroom</em> [standard: days the older sibling cannot collect them]")]);
       chk.push(L("小5以上の兄姉が弟妹を迎えに行ける日は、15:20〜の裏口ドライブスルーも選べます【例外】。兄姉はB1F裏口で待機（P.14）",
         "On days the grade 5+ sibling can collect the younger one, you may use the back-entrance drive-thru from 15:20 [exception]. They wait at the B1 back entrance (P.14)"));
     }
-    /* 小1〜4年の正面DTは【運営委員会からの追記】の2名条件。
+    /* 小1〜4年の正面DTは2名条件（2026.08.13 の配布資料で明文化された）。
        小5以上の兄姉がいる家庭は P.14 の原則/例外が先に来るので、そこを取り違えないように書く。 */
     chk.push(L(
-      "小1〜4年を<b>正面ドライブスルー</b>で迎えられるのは<b>ドライバー1名＋教室まで行く方1名の 計2名でお迎えに来た場合</b>です（お子さんだけを待ち合わせることはできません）。小5以上の兄姉がいるご家庭は上の【原則】【例外】が先に来ます（P.12（運営委員会 追記）, P.14）",
-      "You may collect a grade 1-4 child at the <b>front drive-thru</b> only when <b>two adults come: one driver plus one person who walks to the classroom</b> (a child may not simply meet you there alone). If you also have a grade 5+ child, the rule/exception above comes first (P.12, added by the operating committee; P.14)"));
+      "小1〜4年を<b>正面ドライブスルー</b>で迎えられるのは<b>ドライバー1名＋教室まで行く方1名の 計2名でお迎えに来た場合</b>だけです（お子さんだけを待ち合わせることはできません）。小5以上の兄姉がいるご家庭は上の【原則】【例外】が先に来ます（P.12, P.14）",
+      "You may collect a grade 1-4 child at the <b>front drive-thru</b> only when <b>two adults come: one driver plus one person who walks to the classroom</b> (a child may not simply meet you there alone). If you also have a grade 5+ child, the rule/exception above comes first (P.12, P.14)"));
   } else {
     if (P.g14) {
       rowsOut.push(["15:10–15:30", L(
@@ -3745,12 +3944,12 @@ function buildCard() {
         "<em>Grades 1-4</em> / <em>park and pick up at the classroom</em>")]);
       rowsOut.push([L("同上", "same"), L(
         "<em>校舎正面ドライブスルー</em>（体育館前・カフェテリア前）は" +
-        "<em>ドライバー1名＋教室まで行く方1名の 計2名でお迎えに来た場合</em>" +
-        "<small><b>【運営委員会からの追記】</b>運転手は車に残り、もう1名が教室まで迎えに行きます。" +
+        "<em>ドライバー1名＋教室まで行く方1名の 計2名でお迎えに来た場合</em>のみ" +
+        "<small><b>【2026.08.13 更新】</b>運転手は車に残り、もう1名が教室まで迎えに行きます。" +
         "お子さんだけをドライブスルーで待ち合わせることはできません。</small>",
-        "The <em>front drive-thru</em> (by the gym or the cafeteria) is for " +
+        "The <em>front drive-thru</em> (by the gym or the cafeteria) is only for " +
         "<em>two adults: one driver plus one person who walks to the classroom</em>" +
-        "<small><b>[Added by the operating committee]</b> The driver stays with the car while the other adult walks to the classroom. " +
+        "<small><b>[Updated August 13, 2026]</b> The driver stays with the car while the other adult walks to the classroom. " +
         "A child may not simply meet you at the drive-thru alone.</small>")]);
     }
     if (older(P)) {
@@ -3773,6 +3972,11 @@ function buildCard() {
   if (P.intl && older(P))
     chk.push(L("国際部12:35と小5以上の裏口も別の時間帯です。午後の「弟妹」は小1〜4年生を指します（P.11, P.13, P.14）",
       "The International Dept. at 12:35 and the grade 5+ back entrance are separate windows too. In the afternoon, \"younger sibling\" means grades 1-4 (P.11, P.13, P.14)"));
+  /* 国際部＋小1〜4年は、朝は1回でまとめられるのに午後だけ2回になる。
+     ここを書いておかないと「一緒に帰れるはず」と待たせてしまう。 */
+  if (P.intl && P.g14 && !older(P))
+    chk.push(L("朝は8:05〜8:35に<b>まとめて1回</b>で送れますが、下校は国際部12:35と小1〜4年15:10〜15:30で<b>1日2回</b>になります（P.7, P.11, P.12）",
+      "In the morning you can bring both in <b>one trip</b> between 8:05 and 8:35, but pickup is <b>two trips</b>: the International Dept. at 12:35 and grades 1-4 between 15:10 and 15:30 (P.7, P.11, P.12)"));
 
   /* ---------------- 駐車場（P.4, P.11） ---------------- */
   var park = P.priority
@@ -3805,8 +4009,8 @@ function buildCard() {
 
   $("card").innerHTML = [
     '<div class="ch">' + L("わが家の 送迎カード", "Our Family Pickup Card") + "</div>",
-    '<div class="cs">' + L("JSD 登下校 早見カード ／ 2026.08版 ／ 関係者限定",
-      "JSD drop-off &amp; pickup quick card / Aug 2026 edition / for JSD families only") + "</div>",
+    '<div class="cs">' + L("JSD 登下校 早見カード ／ 2026.08.13版 ／ 関係者限定",
+      "JSD drop-off &amp; pickup quick card / Aug 13, 2026 edition / for JSD families only") + "</div>",
     '<div class="fam">' + famText() + "</div>",
     "<h4>" + L("登校", "Drop-off") + "</h4>", rows(rowsIn),
     "<h4>" + L("下校", "Pickup") + "</h4>", rows(rowsOut),
@@ -3824,17 +4028,21 @@ function buildCard() {
       "□ Sidewalk side only / crawl in the lots / full stop at STOP signs") + "</b>",
     '<b class="ck">' + L("□ ファイアーレーンは駐停車禁止 ／ 合流は1台ずつ交互",
       "□ No stopping in the fire lane / merge one car at a time") + "</b>",
+    /* 2026.08.13 の追記（P.17 のFAQ）。「信号があるから出られるはず」と
+       読まれていた場所なので、カードにも1行置く。 */
+    '<b class="ck">' + L("□ 校舎南側（信号のある出入口）は<b>入口専用</b>。出庫には使えません（警察官・警備員の誘導があるときはその指示に従う）",
+      "□ The south-side opening (the one with the traffic light) is <b>entry only</b> — do not exit there (if a police officer or a security guard is directing traffic, follow their directions)") + "</b>",
     '<b class="ck">' + L("□ ドライブスルーでは車から離れず、前が空いたら速やかに前進",
       "□ In the drive-thru, stay with your car and pull forward promptly") + "</b>",
     chkHtml, "</div>",
     '<div class="foot">' + L(
-      "監修：2026年度運営委員会　／　出典：JSD登下校運用（2026.08）<br>" +
+      "監修：2026年度運営委員会　／　出典：JSD登下校運用（2026.08.13）<br>" +
       "これは学習用の要約です。<b>正式なルールは配布資料が優先します。</b>" +
       "現場では教職員・学校当番・セキュリティ・警察官の指示に従ってください。<br>" +
       "遅刻・早退は担任へご連絡ください（早退時は保護者IDをご持参）。" +
       "<b>連絡先は配布資料P.15をご確認ください。</b><br>" +
       "関係者限定。学校関係者以外への転載・再配布はご遠慮ください。",
-      "Reviewed by the 2026 JSD operating committee / Source: JSD Drop-off &amp; Pickup Rules (Aug 2026)<br>" +
+      "Reviewed by the 2026 JSD operating committee / Source: JSD Drop-off &amp; Pickup Rules (Aug 13, 2026)<br>" +
       "This is a study summary. <b>The handout always takes precedence.</b> " +
       "On site, follow the directions of staff, parents on duty, district security, and police officers.<br>" +
       "Contact the homeroom teacher for late arrivals and early releases (bring your parent ID for an early release). " +
@@ -3866,8 +4074,8 @@ function showCert() {
       "正答 " + ST.right + " / " + ST.asked + "　（" + pct + "％）　LV " + lv() + "　けいけんち " + (ST.exp || 0),
       "Correct " + ST.right + " / " + ST.asked + " (" + pct + "%) &nbsp; LV " + lv() + " &nbsp; EXP " + (ST.exp || 0)) + "</div>",
     '<div class="sg">' + L("監修：2026年度運営委員会", "Reviewed by the 2026 JSD operating committee") + "<br>" +
-    '<span style="font-size:10px">' + L("出典：JSD登下校運用（2026.08）／ 関係者限定／正式なルールは配布資料が優先します",
-      "Source: JSD Drop-off &amp; Pickup Rules (Aug 2026) / for JSD families only / the handout always takes precedence") +
+    '<span style="font-size:10px">' + L("出典：JSD登下校運用（2026.08.13）／ 関係者限定／正式なルールは配布資料が優先します",
+      "Source: JSD Drop-off &amp; Pickup Rules (Aug 13, 2026) / for JSD families only / the handout always takes precedence") +
     "</span></div>"
   ].join("");
   show("scCert");
