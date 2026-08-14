@@ -2352,7 +2352,10 @@ var Q = [
  ex_e:"<b>Kindergartners wait in the cafeteria</b> until their arrival time. That is the waiting place whether a parent walks them in or, on the exception route, an older sibling does (<b>the older sibling walks them to the cafeteria</b>).",
  p:"P.9"},
 
-{ch:5,when:function(p){return p.kinder&&(p.g14||p.intl);},img:"in_g14",
+/* ★P.9 の①は「長子が小1〜4年・国際部」の家庭の規定。小5以上の子がいる家庭は②
+   （原則＝駐車場＋校舎入口まで送る／例外＝裏口DT）に入るので、正面DTは選べない。
+   !older(p) を外すと、その家庭に「正面ドライブスルーでよい」と教えることになる。 */
+{ch:5,when:function(p){return p.kinder&&(p.g14||p.intl)&&!older(p);},img:"in_g14",
  q:"【登校】長子が <b>小1〜4年・国際部</b>、\n<b>幼稚部</b> の弟妹がいる。どうする？",
  c:["駐車場に停め校舎入口まで送る／または正面ドライブスルー。幼稚部園児はカフェテリアで待機","幼稚部の8:40〜8:50に合わせて、全員そろって正面ドライブスルー","校舎裏口ドライブスルーを使い、B1Fで降ろす","上の子と下の子を別々に2回に分けて送る"],a:0,
  ex:"<b>駐車場に駐車し保護者が校舎入口まで送り届ける</b>か、<b>校舎正面ドライブスルー</b>をご利用ください。<b>幼稚部の園児はカフェテリアで登園時間（8:40）まで待機</b>します。",
@@ -2488,7 +2491,9 @@ var Q = [
  ex_e:"You start at <b>15:15</b>. Jr. High/High School alone would start at 15:10, but <b>a family that includes grades 5-6 starts at 15:15</b>. <b>Finish by 15:30.</b> You do not need to make two trips.<br><small>Note: 15:20 is the slot for families with a <b>younger sibling in grades 1-4</b> (P.14). Grades 5-6 plus Jr. High/High counts as \"no younger sibling\" in the afternoon.</small>",
  p:"P.13"},
 
-{ch:5,when:function(p){return p.kinder&&older(p);},
+/* ★!p.g14 が必須。小1〜4年の弟妹もいる家庭は午後は「弟妹あり」の15:20〜なので、
+   この問題の正解（＝「弟妹なし」の時刻）はその家庭には誤った時刻になる。 */
+{ch:5,when:function(p){return p.kinder&&older(p)&&!p.g14;},
  q:"【下校】幼稚部と 小5以上の 兄弟姉妹。\n午後の 裏口の 時刻は？",
  c:["幼稚部は12:30に別便。午後は「弟妹なし」の時刻（小5・6は15:15／中高は15:10）","幼稚部に合わせて全員12:30に迎えて、午後は裏口に行かなくてよい","幼稚部の弟妹がいるので、午後も「弟妹あり」の15:20に合わせて並ぶ","幼稚部の弟妹をカフェテリアで15時まで待たせて、そのまま一緒に裏口で帰る"],a:0,
  ex:"幼稚部のピックアップは<b>12:30・駐車場利用で教室までお迎え</b>。<b>2回の送迎</b>になります。<br>午後の裏口ドライブスルーでいう「弟妹」は<b>小1〜4年生</b>を指すため（P.14）、幼稚部の弟妹はすでに帰宅していて車にいません。したがって午後は<b>「弟妹なし」の時刻</b>＝小5・6は15:15〜／中高は15:10〜になります。<br><small>※これはP.13とP.14からの解釈です。当日の運用は現場の指示に従ってください。</small>",
@@ -2770,8 +2775,10 @@ var CODEX = [
    "Entering the building","You must carry your parent ID. Wear it around your neck and show it to the police officer. IDs are handed out on the first day of school in your oldest child's classroom."],
   ["ファイアーレーン","駐停車禁止。赤い縁石や路面の標示が目印。","P.3",
    "Fire lane","No stopping and no parking. Look for the red curbs and red pavement markings."],
-  ["STOPサイン","必ず一時停止。構内は徐行。","P.3",
-   "STOP signs","Always come to a complete stop. Drive at a crawl on campus."],
+  /* ★P.3 に徐行は書かれていない（徐行は各ルートのページ＝下の「駐車場内」の行）。
+     出典のページに無いことを混ぜないこと。 */
+  ["STOPサイン","必ず一時停止してから進む。","P.3",
+   "STOP signs","Always come to a complete stop before moving on."],
   ["乗降","園児・児童・生徒は必ず歩道側で乗降。","P.3",
    "Getting in and out","Children always get in and out on the sidewalk side."],
   ["右折禁止","構内に右折禁止箇所あり（配布資料P.3の図を確認）。","P.3",
@@ -2809,7 +2816,10 @@ var CODEX = [
    "Arriving late, 8:40-8:50","That window is kindergarten arrival time. Elementary and older students are dropped off by the gym, or you park in a lot."],
   ["兄弟姉妹｜長子が小1〜4・国際部＋幼稚部の弟妹","駐車場に駐車し保護者が校舎入口まで送る、または校舎正面ドライブスルー。幼稚部園児はカフェテリアで登園時間まで待機。","P.9",
    "Siblings | oldest in grades 1-4 or International, younger in kindergarten","Park and walk them to the entrance, or use the front drive-thru. The kindergartner waits in the cafeteria until arrival time.",
-   function (p) { return !!(p.kinder && (p.g14 || p.intl)); }],
+   /* ★兄弟姉妹の行は「その組み合わせが長子である家庭」にだけ出す。
+      小5以上の子がいる家庭はP.9の②（原則／例外）が先に来るので、
+      !older(p) を外すとその家庭に正面DTを勧めることになる（出題側も同じ条件）。 */
+   function (p) { return !!(p.kinder && (p.g14 || p.intl) && !older(p)); }],
   ["兄弟姉妹｜長子が小5以上＋弟妹<br>【原則】兄姉が付き添えない日","駐車場に駐車し、保護者が校舎入口まで送り届ける。幼稚部園児はカフェテリアで待機。","P.9",
    "Siblings | oldest in grade 5+ with a younger sibling<br>[Rule] days the older sibling cannot come along","Park, and the parent walks them to the building entrance. A kindergartner waits in the cafeteria.",
    function (p) { return mix(p); }],
@@ -2818,10 +2828,12 @@ var CODEX = [
    function (p) { return mix(p); }],
   ["兄弟姉妹｜国際部＋小1〜4年","この2人はどちらも8:05〜8:35で方式も同じ（駐車場利用または校舎正面ドライブスルー）なので、朝は同じ便でまとめられる。下校は12:35と15:10〜15:30で別。","P.7, P.11, P.12",
    "Siblings | International Dept. + grades 1-4","These two are both 8:05-8:35 with the same options (park, or the front drive-thru), so one morning trip covers them. Pickup splits: 12:35 and 15:10-15:30.",
-   function (p) { return !!(p.intl && p.g14); }],
+   function (p) { return !!(p.intl && p.g14 && !older(p)); }],
   ["兄弟姉妹｜小5・6年＋中高","登校は小学5年生以上でひとまとめ。どちらも8:15〜8:35・校舎裏口ドライブスルーなので同じ便でまとめられる。","P.8",
    "Siblings | grades 5-6 + Jr. High/High School","Drop-off treats grade 5 and up as one group: both are 8:15-8:35 at the back-entrance drive-thru, so one trip covers them.",
-   function (p) { return !!(p.g56 && p.jh); }]]},
+   /* 弟妹がいる家庭の朝はP.9の②（原則＝駐車場＋校舎入口まで送る）が先に来るので、
+      「裏口でひとまとめ」だけを見せない。 */
+   function (p) { return !!(p.g56 && p.jh && !younger(p)); }]]},
  {t:"下校",t_e:"Pickup",fig:["out_lot3","out_lot1","out_g14","out_g56"],r:[
   ["幼稚部","12:30／駐車場利用・保護者が教室までお迎え。","P.11",
    "Kindergarten","12:30 / park, and the parent walks to the classroom.",
@@ -2852,10 +2864,12 @@ var CODEX = [
    function (p) { return pmMix(p); }],
   ["兄弟姉妹｜国際部＋小1〜4年","下校は国際部12:35／小1〜4年15:10〜15:30で時間帯が別。午後は2回のお迎えになる。「先に幼稚部→その後 国際部」の順番ルールは幼稚部と国際部の組み合わせに限った規定なので、この2人には当てはまらない。","P.11, P.12",
    "Siblings | International Dept. + grades 1-4","Pickup is 12:35 for the International Dept. and 15:10-15:30 for grades 1-4 — separate windows, so the afternoon takes two trips. The \"kindergarten first, then International Dept.\" ordering rule is only for that pair and does not apply here.",
-   function (p) { return !!(p.intl && p.g14); }],
+   function (p) { return !!(p.intl && p.g14 && !older(p)); }],
   ["兄弟姉妹｜小5・6年＋中高","裏口ドライブスルーの開始時刻は、小5・6年を含むご家庭は15:15〜（中高だけなら15:10〜）。15:30までに完了。2回に分ける必要はない。","P.13",
    "Siblings | grades 5-6 + Jr. High/High School","At the back-entrance drive-thru, a family that includes grades 5-6 starts at 15:15 (Jr. High/High School alone would be 15:10). Finish by 15:30. You do not need two trips.",
-   function (p) { return !!(p.g56 && p.jh); }],
+   /* ★小1〜4年の弟妹がいる家庭は15:20〜なので、この行の15:15を見せてはいけない。
+      幼稚部・国際部の弟妹は午後いないので !p.g14 だけで足りる（§7 の pmMix）。 */
+   function (p) { return !!(p.g56 && p.jh && !p.g14); }],
   ["なぜ小5以上が裏口？","①駐車場の混雑緩和　②裏口が地下1階・低学年の教室は1階のため、低学年は大きな荷物を持った階段の昇り降りが必要になるため。","P.17",
    "Why grade 5 and up use the back entrance","(1) It eases congestion in the lots. (2) The back entrance is on B1 and the younger grades' classrooms are on floor 1, so younger children would be carrying heavy bags up and down stairs.",
    function (p) { return older(p); }]]},
@@ -3966,9 +3980,16 @@ function buildCard() {
   if (older(P))
     chk.push(L("裏口ドライブスルーは【ピックアップカード】必須：白い紙にクラスと名前（対象生徒 全員分）をフロントガラスに掲示。ない場合は15:20以降＋列から一旦退出していただくことがあります（P.13, P.17, P.18）",
       "The back-entrance drive-thru requires a [pickup card]: white paper with the class and name of every student you are collecting, displayed on the windshield. Without it you may be asked to leave the line and pick up after 15:20 (P.13, P.17, P.18)"));
+  /* ★「午後は弟妹なし」と書けるのは小1〜4年の弟妹がいないときだけ。
+     幼稚部＋小1〜4年＋小5以上の家庭は午後は「弟妹あり」の15:20〜なので、
+     ここを場合分けしないと上の時刻の行と矛盾したカードになる。 */
   if (P.kinder && older(P))
-    chk.push(L("幼稚部12:30と小5以上の裏口は時間帯がまったく別。<b>1日2回の送迎</b>になります。午後の裏口でいう「弟妹」は小1〜4年生を指すため、幼稚部の弟妹がいても午後は「弟妹なし」の時刻です（P.11, P.13, P.14）",
-      "Kindergarten at 12:30 and the grade 5+ back entrance are completely separate windows, so this is <b>two trips in one day</b>. In the afternoon, \"younger sibling\" means grades 1-4, so even with a kindergartner your afternoon window is the \"no younger sibling\" one (P.11, P.13, P.14)"));
+    chk.push(L("幼稚部12:30と小5以上の裏口は時間帯がまったく別。<b>1日2回の送迎</b>になります。午後の裏口でいう「弟妹」は小1〜4年生を指すため、" +
+      (P.g14 ? "わが家は<b>「弟妹あり」の15:20〜</b>です（幼稚部の弟妹は数に入りません）"
+             : "幼稚部の弟妹がいても午後は「弟妹なし」の時刻です") + "（P.11, P.13, P.14）",
+      "Kindergarten at 12:30 and the grade 5+ back entrance are completely separate windows, so this is <b>two trips in one day</b>. In the afternoon, \"younger sibling\" means grades 1-4, so " +
+      (P.g14 ? "your family is in the <b>\"with a younger sibling\" slot from 15:20</b> (the kindergartner does not change that)"
+             : "even with a kindergartner your afternoon window is the \"no younger sibling\" one") + " (P.11, P.13, P.14)"));
   if (P.intl && older(P))
     chk.push(L("国際部12:35と小5以上の裏口も別の時間帯です。午後の「弟妹」は小1〜4年生を指します（P.11, P.13, P.14）",
       "The International Dept. at 12:35 and the grade 5+ back entrance are separate windows too. In the afternoon, \"younger sibling\" means grades 1-4 (P.11, P.13, P.14)"));
